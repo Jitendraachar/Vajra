@@ -9,7 +9,7 @@ public class LoginPageObject {
 	WebDriver driver;
 	 public void SalesBillPage (WebDriver adriver)
 	 {
-		 driver=adriver;
+		 ldriver=adriver;
 				 PageFactory.initElements(adriver, this);
 	 }
 	 
@@ -25,10 +25,10 @@ public class LoginPageObject {
 		
 		
 		public void EnterUserID() {
-			UserIDField.sendKeys("");
+			UserIDField.sendKeys("63");
 		}
 			public void EnterUserPass(){
-				PasswordFiled.sendKeys("");
+				PasswordFiled.sendKeys("pass123");
 			}
 			
 			public void ClickOnLoginButton() {
