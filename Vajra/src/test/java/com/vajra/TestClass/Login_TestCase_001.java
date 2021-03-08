@@ -11,7 +11,11 @@ public class Login_TestCase_001 extends BaseClasss{
 	
 	@Test
 	public void salesLogin() {
-		LoginPageObject lpo= new LoginPageObject(driver);
+		LoginPageObject lpo= new LoginPageObject();
+		driver.get(URL);
+		lpo.EnterUserID();
+		lpo.EnterUserPass();
+		lpo.ClickOnLoginButton();
 		
 	}
 

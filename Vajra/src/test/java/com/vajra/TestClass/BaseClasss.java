@@ -10,7 +10,7 @@ public class BaseClasss {
 	//to read the config file using java
 	public String evn=Readconfig.envirnoment();
 	//to call different testing environment
-	String URL;
+	public static String URL;
 	//set driver
 	public static WebDriver driver;
 	
