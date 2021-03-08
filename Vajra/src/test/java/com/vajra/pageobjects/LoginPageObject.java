@@ -9,7 +9,7 @@ public class LoginPageObject {
 	WebDriver driver;
 	 public void SalesBillPage (WebDriver adriver)
 	 {
-		 driver=adriver;
+		 ldriver=adriver;
 				 PageFactory.initElements(adriver, this);
 	 }
 	 
