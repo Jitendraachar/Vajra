@@ -1,6 +1,5 @@
 package com.vajra.TestClass;
 
-import java.sql.Driver;
 
 import org.testng.annotations.Test;
 

@@ -4,6 +4,7 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
@@ -30,12 +31,17 @@ public class BaseClasss {
 	
 	  public void setup(String br) { 
 		if(br.equals("chrome")) {
-			driver=new ChromeDriver();
-	  System.setProperty("WebDriver.chrome.driver",readconfig.readChrompath());
-	  driver.manage().window().maximize();
-	  driver.manage().timeouts().implicitlyWait(1000, TimeUnit.SECONDS); } else
-	  if(br.equals("Firefox")) { System.setProperty("webdriver.gecko.driver",
-	  readconfig.readFirefoxpath());
+			
+			 System.setProperty("WebDriver.chrome.driver",readconfig.readChrompath());
+			 driver=new ChromeDriver();
+		}
+			
+	 
+	  //driver.manage().window().maximize();
+	  //driver.manage().timeouts().implicitlyWait(1000, TimeUnit.SECONDS); } else
+		else if(br.equals("Firefox")) { 
+		  System.setProperty("webdriver.gecko.driver",readconfig.readFirefoxpath());
+		  driver = new FirefoxDriver();
 	  }
 	}
 	  
