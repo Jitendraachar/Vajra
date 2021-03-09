@@ -102,7 +102,7 @@
                     <div class="method-list-content skipped suite-vajra">
                       <span>
                         <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-vajra" title="com.vajra.TestClass.Login_TestCase_001" class="method navigator-link" hash-for-method="Login_TestCase_001">Login_TestCase_001</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-vajra" title="com.vajra.TestClass.Login_TestCase_001" class="method navigator-link" hash-for-method="Login_TestCase">Login_TestCase</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content skipped suite-vajra -->
@@ -125,13 +125,63 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="Login_TestCase_001">
-                  </a> <!-- Login_TestCase_001 -->
-                  <span class="method-name">Login_TestCase_001</span>
-                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.manage()&quot; because &quot;com.vajra.TestClass.BaseClasss.driver&quot; is null
+                  <a name="Login_TestCase">
+                  </a> <!-- Login_TestCase -->
+                  <span class="method-name">Login_TestCase</span>
+                  <div class="stack-trace">org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 84
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;ISSLT560&apos;, ip: &apos;172.16.1.4&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x011487E3+2852835]
+	Ordinal0 [0x01035BB1+1727409]
+	Ordinal0 [0x00F0E4B9+517305]
+	Ordinal0 [0x00EA0BA0+68512]
+	Ordinal0 [0x00E9D3A0+54176]
+	Ordinal0 [0x00EBD9F7+186871]
+	Ordinal0 [0x00EBD7FD+186365]
+	Ordinal0 [0x00EBB70B+177931]
+	Ordinal0 [0x00EA2584+75140]
+	Ordinal0 [0x00EA3650+79440]
+	Ordinal0 [0x00EA35E9+79337]
+	Ordinal0 [0x0104AD5C+1813852]
+	GetHandleVerifier [0x0126C616+1075574]
+	GetHandleVerifier [0x0126C367+1074887]
+	GetHandleVerifier [0x01277497+1120247]
+	GetHandleVerifier [0x0126CC16+1077110]
+	Ordinal0 [0x01043206+1782278]
+	Ordinal0 [0x0104C3BB+1819579]
+	Ordinal0 [0x0104C523+1819939]
+	Ordinal0 [0x01062B45+1911621]
+	BaseThreadInitThunk [0x76CD62C4+36]
+	RtlSubscribeWnfStateChangeNotification [0x77060F79+1081]
+	RtlSubscribeWnfStateChangeNotification [0x77060F44+1028]
+
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
 	at com.vajra.TestClass.BaseClasss.setup(BaseClasss.java:33)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 25 stack frames
+... Removed 30 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -147,12 +197,12 @@
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;vajra&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Vajra Test&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Vajra&quot;&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.vajra.TestClass.Login_TestCase_001&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Vajra Test --&gt;
+  &lt;/test&gt; &lt;!-- Vajra --&gt;
 &lt;/suite&gt; &lt;!-- vajra --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -164,7 +214,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Vajra Test (1 class)</span>
+                <span class="test-name">Vajra (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -192,7 +242,7 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'Login_TestCase_001')
+data.setCell(0, 1, 'Login_TestCase')
 data.setCell(0, 2, 'com.vajra.TestClass.Login_TestCase_001')
 data.setCell(0, 3, 0);
 window.suiteTableData['vajra']= { tableData: data, tableDiv: 'times-div-vajra'}
@@ -233,12 +283,12 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">Login_TestCase_001</span>
-                <span class="method-start">43 ms</span>
+                <span class="method-name">Login_TestCase</span>
+                <span class="method-start">7597 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">53 ms</span>
+                <span class="method-start">7607 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
