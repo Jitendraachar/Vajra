@@ -15,10 +15,12 @@ public class BaseClasss {
 	public String firefoxpath=readconfig.readFirefoxpath();
 	public String envi=readconfig.envirnoment();
 	
-	//to call different testing environment
-	public static String URL;
 	//set driver
 	public static WebDriver driver;
+	
+	//to call different testing environment
+	public static String URL;
+
 
 	@Parameters("browser")
 	
@@ -27,7 +29,7 @@ public class BaseClasss {
 	public void setup(String br)
 	{
 		if(br.equals("chrome")) {
-			System.setProperty("webdriver.chrome.driver",chrome );
+			System.setProperty("webdriver.chrome.driver",readconfig.readChrompath());
 			driver.manage().window().maximize();
 			driver.manage().timeouts().implicitlyWait(1000, TimeUnit.SECONDS);
 		}
