@@ -1,5 +1,7 @@
 package com.vajra.TestClass;
 
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.*;
 import com.vajra.utilities.*;
@@ -8,36 +10,44 @@ import com.vajra.utilities.Readconfig;
 
 public class BaseClasss {
 	//to read the config file using java
-	public String evn=Readconfig.envirnoment();
+	Readconfig readconfig=new Readconfig();
+	public String chrome=readconfig.readChrompath();
+	public String firefoxpath=readconfig.readFirefoxpath();
+	public String envi=readconfig.envirnoment();
+	
 	//to call different testing environment
 	public static String URL;
 	//set driver
 	public static WebDriver driver;
+
+	@Parameters("browser")
 	
 
 	@BeforeClass
 	public void setup(String br)
 	{
-		if(br.equals("Chrome")) {
-			System.setProperty("webdriver.chrome.driver", Readconfig.readChrompath());
+		if(br.equals("chrome")) {
+			System.setProperty("webdriver.chrome.driver",chrome );
+			driver.manage().window().maximize();
+			driver.manage().timeouts().implicitlyWait(1000, TimeUnit.SECONDS);
 		}
 		else if(br.equals("Firefox")) {
-			System.setProperty("webdriver.gecko.driver", Readconfig.readFirefoxpath());
+			System.setProperty("webdriver.gecko.driver", readconfig.readFirefoxpath());
 		}
 	
 		
 	}
 	public void envirnoment()
 	{
-		if(evn.equals("EXT"))
+		if(envi.equals("EXT"))
 		{
 			URL="http://192.168.1.10:2013/Sales";
 		}
-		else if(evn.equals("UAT"))
+		else if(envi.equals("UAT"))
 		{
 			URL="http://192.168.1.10:2014/Sales";
 		}
-		else if(evn.equals("Cloud"))
+		else if(envi.equals("Cloud"))
 		{
 			URL="http://103.1.114.170:2008/Sales";
 		}

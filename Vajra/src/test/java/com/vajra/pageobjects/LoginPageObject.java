@@ -7,10 +7,10 @@ import org.openqa.selenium.support.PageFactory;
 
 public class LoginPageObject {
 	WebDriver driver;
-	 public void SalesBillPage (WebDriver adriver)
+	 public void LoginPageObject(WebDriver adriver)
 	 {
-		 ldriver=adriver;
-				 PageFactory.initElements(adriver, this);
+		 adriver=driver;
+		 PageFactory.initElements(adriver, this);
 	 }
 	 
 	 

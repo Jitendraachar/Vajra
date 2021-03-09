@@ -4,7 +4,7 @@
   <test thread-count="5" name="Vajra Test">
   <parameter name="browser" value="chrome"/>
   <classes>
-  <class name="Login_TestCase_001"/>
+  <class name="com.vajra.TestClass.Login_TestCase_001"/>
   </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

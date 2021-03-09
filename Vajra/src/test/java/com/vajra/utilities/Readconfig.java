@@ -1,37 +1,37 @@
 package com.vajra.utilities;
 
 import java.io.FileInputStream;
-import java.util.Properties;
+import java.util.*;
 
 public class Readconfig {
 	
-	static Properties pro;
+	 Properties pro;
 	
-	public void readConfig()
+	public Readconfig()
 	{
 		try {
 			//Read File from Same Directory
-			FileInputStream Properties= new FileInputStream("./Configuration/config.properties");
-			//Create a constructore 
+			FileInputStream src = new FileInputStream("./Configuration//config.properties");
+			//Create a constructor
 			pro =new Properties();
 			//Load the Data from properties from config file
-			pro.load(Properties);
+			pro.load(src);
 		}catch(Exception e) {
-			System.out.print("could not load the file");
+			System.out.print("Exception is" +e.getMessage());
 		}
 	}
-		public static String readChrompath()
+	
+		public String readChrompath()
 		{
-			String Chropath=pro.getProperty("chromepath");
+			String Chropath= pro.getProperty("chromepath");
 			return Chropath;
-			
 		}
-		public static String readFirefoxpath()
+		public String readFirefoxpath()
 		{
 			String Firefoxpath=pro.getProperty("firefoxpath");
 			return Firefoxpath;
 		}
-		public static String envirnoment()
+		public  String envirnoment()
 		{
 			String env=pro.getProperty("Environment");
 			return env;
