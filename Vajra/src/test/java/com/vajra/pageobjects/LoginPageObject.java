@@ -5,12 +5,13 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+
 public class LoginPageObject {
-	WebDriver driver;
-	 public void LoginPageObject(WebDriver adriver)
+	WebDriver ldriver;
+	 public LoginPageObject(WebDriver rdriver)
 	 {
-		 adriver=driver;
-		 PageFactory.initElements(adriver, this);
+		 ldriver=rdriver;
+		 PageFactory.initElements(rdriver, this);
 	 }
 	 
 	 
