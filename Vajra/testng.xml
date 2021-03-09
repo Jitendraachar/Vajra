@@ -6,5 +6,5 @@
   <classes>
   <class name="com.vajra.TestClass.Login_TestCase_001"/>
   </classes>
-  </test> <!-- Test -->
-</suite> <!-- Suite -->
+  </test> 
+</suite> 

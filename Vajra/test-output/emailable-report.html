@@ -9,18 +9,118 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">vajra</th></tr>
-<tr><td><a href="#t0">Vajra Test</a></td><td class="num">0</td><td class="num attn">1</td><td class="num">0</td><td class="num">0</td><td class="num">90</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Vajra</a></td><td class="num">0</td><td class="num attn">1</td><td class="num">0</td><td class="num">0</td><td class="num">7,641</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">vajra</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Vajra Test &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">com.vajra.TestClass.Login_TestCase_001</td><td><a href="#m0">setup</a></td><td rowspan="1">1615273264811</td><td rowspan="1">17</td></tr><tr><th colspan="4">Vajra Test &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="1">com.vajra.TestClass.Login_TestCase_001</td><td><a href="#m1">teardown</a></td><td rowspan="1">1615273264864</td><td rowspan="1">-1615273264864</td></tr><tr><th colspan="4">Vajra Test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">com.vajra.TestClass.Login_TestCase_001</td><td><a href="#m2">Login_TestCase_001</a></td><td rowspan="1">1615273264854</td><td rowspan="1">0</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">vajra</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Vajra &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">com.vajra.TestClass.Login_TestCase_001</td><td><a href="#m0">setup</a></td><td rowspan="1">1615277318632</td><td rowspan="1">7569</td></tr><tr><th colspan="4">Vajra &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="1">com.vajra.TestClass.Login_TestCase_001</td><td><a href="#m1">teardown</a></td><td rowspan="1">1615277326239</td><td rowspan="1">-1615277326239</td></tr><tr><th colspan="4">Vajra &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">com.vajra.TestClass.Login_TestCase_001</td><td><a href="#m2">Login_TestCase</a></td><td rowspan="1">1615277326229</td><td rowspan="1">0</td></tr></tbody>
 </table>
-<h2>Vajra Test</h2><h3 id="m0">com.vajra.TestClass.Login_TestCase_001#setup</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>chrome</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.manage()&quot; because &quot;com.vajra.TestClass.BaseClasss.driver&quot; is null
+<h2>Vajra</h2><h3 id="m0">com.vajra.TestClass.Login_TestCase_001#setup</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>chrome</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 84
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;ISSLT560&apos;, ip: &apos;172.16.1.4&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x011487E3+2852835]
+	Ordinal0 [0x01035BB1+1727409]
+	Ordinal0 [0x00F0E4B9+517305]
+	Ordinal0 [0x00EA0BA0+68512]
+	Ordinal0 [0x00E9D3A0+54176]
+	Ordinal0 [0x00EBD9F7+186871]
+	Ordinal0 [0x00EBD7FD+186365]
+	Ordinal0 [0x00EBB70B+177931]
+	Ordinal0 [0x00EA2584+75140]
+	Ordinal0 [0x00EA3650+79440]
+	Ordinal0 [0x00EA35E9+79337]
+	Ordinal0 [0x0104AD5C+1813852]
+	GetHandleVerifier [0x0126C616+1075574]
+	GetHandleVerifier [0x0126C367+1074887]
+	GetHandleVerifier [0x01277497+1120247]
+	GetHandleVerifier [0x0126CC16+1077110]
+	Ordinal0 [0x01043206+1782278]
+	Ordinal0 [0x0104C3BB+1819579]
+	Ordinal0 [0x0104C523+1819939]
+	Ordinal0 [0x01062B45+1911621]
+	BaseThreadInitThunk [0x76CD62C4+36]
+	RtlSubscribeWnfStateChangeNotification [0x77060F79+1081]
+	RtlSubscribeWnfStateChangeNotification [0x77060F44+1028]
+
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
 	at com.vajra.TestClass.BaseClasss.setup(BaseClasss.java:33)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m1">com.vajra.TestClass.Login_TestCase_001#teardown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">com.vajra.TestClass.Login_TestCase_001#Login_TestCase_001</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.manage()&quot; because &quot;com.vajra.TestClass.BaseClasss.driver&quot; is null
+<h3 id="m2">com.vajra.TestClass.Login_TestCase_001#Login_TestCase</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 84
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;ISSLT560&apos;, ip: &apos;172.16.1.4&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x011487E3+2852835]
+	Ordinal0 [0x01035BB1+1727409]
+	Ordinal0 [0x00F0E4B9+517305]
+	Ordinal0 [0x00EA0BA0+68512]
+	Ordinal0 [0x00E9D3A0+54176]
+	Ordinal0 [0x00EBD9F7+186871]
+	Ordinal0 [0x00EBD7FD+186365]
+	Ordinal0 [0x00EBB70B+177931]
+	Ordinal0 [0x00EA2584+75140]
+	Ordinal0 [0x00EA3650+79440]
+	Ordinal0 [0x00EA35E9+79337]
+	Ordinal0 [0x0104AD5C+1813852]
+	GetHandleVerifier [0x0126C616+1075574]
+	GetHandleVerifier [0x0126C367+1074887]
+	GetHandleVerifier [0x01277497+1120247]
+	GetHandleVerifier [0x0126CC16+1077110]
+	Ordinal0 [0x01043206+1782278]
+	Ordinal0 [0x0104C3BB+1819579]
+	Ordinal0 [0x0104C523+1819939]
+	Ordinal0 [0x01062B45+1911621]
+	BaseThreadInitThunk [0x76CD62C4+36]
+	RtlSubscribeWnfStateChangeNotification [0x77060F79+1081]
+	RtlSubscribeWnfStateChangeNotification [0x77060F44+1028]
+
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
 	at com.vajra.TestClass.BaseClasss.setup(BaseClasss.java:33)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
