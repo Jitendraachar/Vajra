@@ -23,16 +23,18 @@ public class BaseClasss {
 
 	// to call different testing environment
 	public static String URL;
-
-	@Parameters("browser")
+public static String br;
+	
 
 	@BeforeClass
 
 	
-	  public void setup(String br) { 
+	  public void setup() { 
+		br="chrome";
 		if(br.equals("chrome")) {
-			
-			 System.setProperty("WebDriver.chrome.driver",readconfig.readChrompath());
+			System.setProperty("webdriver.chrome.driver","C:\\Users\\akash.singh\\Downloads\\testchrome\\chromedriver.exe");
+
+			 System.setProperty("webdriver.chrome.driver","C:\\Users\\shubh\\git\\Vajra\\Vajra\\Drivers\\chromedriver.exe");
 			 driver=new ChromeDriver();
 		}
 			
