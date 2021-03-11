@@ -7,10 +7,10 @@ import org.openqa.selenium.support.PageFactory;
 
 
 public class LoginPageObject {
-	WebDriver ldriver;
+	WebDriver driver;
 	 public LoginPageObject(WebDriver rdriver)
 	 {
-		 ldriver=rdriver;
+		 driver=rdriver;
 		 PageFactory.initElements(rdriver, this);
 	 }
 	 
@@ -25,15 +25,19 @@ public class LoginPageObject {
 		WebElement LoginButton;
 		
 		
-		public void EnterUserID() {
-			UserIDField.sendKeys("63");
+		public void EnterUserID(String sEID) {
+			UserIDField.sendKeys(sEID);
 		}
-			public void EnterUserPass(){
-				PasswordFiled.sendKeys("pass123");
+			public void EnterUserPass(String sEpass){
+				PasswordFiled.sendKeys(sEpass);
 			}
 			
 			public void ClickOnLoginButton() {
 				LoginButton.click();
+			}
+			public String getPageTitle() {
+				String title = driver.getTitle();
+				return title;
 			}
 	}
 

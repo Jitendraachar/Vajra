@@ -31,10 +31,11 @@ public class Readconfig {
 			String Firefoxpath=pro.getProperty("firefoxpath");
 			return Firefoxpath;
 		}
-		public  String envirnoment()
+	
+		public String readBrowser()
 		{
-			String env=pro.getProperty("Environment");
-			return env;
+			String Broswer=pro.getProperty("Browser");
+			return Broswer;
 		}
 		
 	}
