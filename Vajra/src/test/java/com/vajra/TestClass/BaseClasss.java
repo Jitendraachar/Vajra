@@ -27,18 +27,29 @@ public class BaseClasss {
 	Readconfig readconfig = new Readconfig();
 	public String chrome = readconfig.readChrompath();
 	public String firefoxpath = readconfig.readFirefoxpath();
-//	public String envirnoment = readconfig.envirnoment();
+	public String envirnoment = readconfig.envirnoment();
 	public String Browser=readconfig.readBrowser();
 	public static WebDriver driver;
 public static String SEID="13";
 public static String SEpass="pass123";
 
 public static String OrderSectionID="17";
-public static String OrderSectionPass="17";
+public static String OrderSectionPass="pass123";
 
+public static String CashierID="15";
+public static String CashierPass="pass123";
 
+public static String StoreHeadID="11";
+public static String StoreHeadPass="pass123";
+
+public static String OEID="110";
+public static String OEPass="pass123";
+public static String SalesTittle="Sales - Dashboard - Sales";
+public static String OETittle="";
 	// to call different testing environment
-	public static String URL;
+	public static String SalesURL;
+	public static String OEURL;
+
 	//public static String br;
 
 
@@ -77,13 +88,16 @@ public static String OrderSectionPass="17";
 	}
 	public void envSetUp() {
 		//Setting up envoirment
-	String	envirnoment="Cloud";
+
 		if (envirnoment.equals("EXT")) {
-			URL = "https://www.google.com/";
+			SalesURL = "https://www.google.com/";
+			OEURL = "https://www.google.com/";
 		} else if (envirnoment.equals("UAT")) {
-			URL = "https://www.google.com/";
+			SalesURL = "https://www.google.com/";
+			OEURL = "https://www.google.com/";
 		} else if (envirnoment.equals("Cloud")) {
-			URL = "http://103.1.114.170:2008/Sales/";
+			SalesURL = "http://103.1.114.170:2008/Sales";
+			OEURL = "http://103.1.114.170:2008/OrderExecution";
 		}
 
 

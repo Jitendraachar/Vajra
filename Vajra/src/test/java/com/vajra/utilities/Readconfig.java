@@ -37,6 +37,11 @@ public class Readconfig {
 			String Broswer=pro.getProperty("Browser");
 			return Broswer;
 		}
+		public String envirnoment()
+		{
+			String envirnoment=pro.getProperty("Environment");
+			return envirnoment;
+		}
 		
 	}
 
