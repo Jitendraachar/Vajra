@@ -31,8 +31,11 @@ public class BaseClasss {
 	public String Browser=readconfig.readBrowser();
 	public static WebDriver driver;
 public static String SEID="13";
-
 public static String SEpass="pass123";
+
+public static String OrderSectionID="17";
+public static String OrderSectionPass="17";
+
 
 	// to call different testing environment
 	public static String URL;
