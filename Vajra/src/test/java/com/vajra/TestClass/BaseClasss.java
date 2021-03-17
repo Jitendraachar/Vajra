@@ -30,26 +30,26 @@ public class BaseClasss {
 	public String envirnoment = readconfig.envirnoment();
 	public String Browser=readconfig.readBrowser();
 	public static WebDriver driver;
-public static String SEID="13";
-public static String SEpass="pass123";
+	public static String SEID="13";
+	public static String SEpass="pass123";
 
-public static String OrderSectionID="17";
-public static String OrderSectionPass="pass123";
+	public static String OrderSectionID="17";
+	public static String OrderSectionPass="pass123";
 
-public static String CashierID="15";
-public static String CashierPass="pass123";
+	public static String CashierID="15";
+	public static String CashierPass="pass123";
 
-public static String StoreHeadID="11";
-public static String StoreHeadPass="pass123";
+	public static String StoreHeadID="11";
+	public static String StoreHeadPass="pass123";
 
-public static String OEID="110";
-public static String OEPass="pass123";
-public static String SalesTittle="Sales - Dashboard - Sales";
-public static String OETittle="";
+	public static String OEID="110";
+	public static String OEPass="pass123";
+	public static String SalesTittle="Sales - Dashboard - Sales";
+	public static String OETittle="";
 	// to call different testing environment
 	public static String SalesURL;
 	public static String OEURL;
-
+public static String OrderCustomerID="8";
 	//public static String br;
 
 
@@ -90,8 +90,8 @@ public static String OETittle="";
 		//Setting up envoirment
 
 		if (envirnoment.equals("EXT")) {
-			SalesURL = "https://www.google.com/";
-			OEURL = "https://www.google.com/";
+			SalesURL = "http://192.168.1.10:2013/Sales";
+			OEURL = "http://192.168.1.10:2013/OrderExecution";
 		} else if (envirnoment.equals("UAT")) {
 			SalesURL = "https://www.google.com/";
 			OEURL = "https://www.google.com/";

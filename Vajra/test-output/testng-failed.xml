@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.vajra.TestClass.Login_TestCase_001">
+      <class name="com.vajra.TestClass.CreateOrder_TestCase_002">
         <methods>
-          <include name="Login_TestCase_OE"/>
           <include name="setup"/>
           <include name="teardown"/>
+          <include name="OrderHeaderPage"/>
         </methods>
-      </class> <!-- com.vajra.TestClass.Login_TestCase_001 -->
+      </class> <!-- com.vajra.TestClass.CreateOrder_TestCase_002 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -68,7 +68,7 @@ public class Login_TestCase_001 extends BaseClasss {
 		lpo.EnterUserID(OEID);
 		lpo.EnterUserPass(OEPass);
 		lpo.ClickOnLoginButton();
-		Assert.assertEquals(driver.getTitle(), SalesTittle);
+		Assert.assertEquals(driver.getTitle(), OETittle);
 	}
 }
 

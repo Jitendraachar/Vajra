@@ -9,14 +9,37 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">4</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">46,747</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">24,402</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.vajra.TestClass.Login_TestCase_001</td><td><a href="#m0">Login_TestCase_OE</a></td><td rowspan="1">1615811038332</td><td rowspan="1">8127</td></tr><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="4">com.vajra.TestClass.Login_TestCase_001</td><td><a href="#m1">Login_TestCase_Cashier</a></td><td rowspan="1">1615811019588</td><td rowspan="1">18727</td></tr><tr class="passedeven"><td><a href="#m2">Login_TestCase_OrderSection</a></td><td rowspan="1">1615811046474</td><td rowspan="1">5445</td></tr><tr class="passedeven"><td><a href="#m3">Login_TestCase_SE</a></td><td rowspan="1">1615811051924</td><td rowspan="1">4017</td></tr><tr class="passedeven"><td><a href="#m4">Login_TestCase_StoreHead</a></td><td rowspan="1">1615811055947</td><td rowspan="1">3652</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.vajra.TestClass.CreateOrder_TestCase_002</td><td><a href="#m0">OrderHeaderPage</a></td><td rowspan="1">1615960839581</td><td rowspan="1">5156</td></tr><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.vajra.TestClass.CreateOrder_TestCase_002</td><td><a href="#m1">SearchCustomer</a></td><td rowspan="1">1615960827220</td><td rowspan="1">12343</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">com.vajra.TestClass.Login_TestCase_001#Login_TestCase_OE</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">junit.framework.ComparisonFailure: expected:&lt;&gt; but was:&lt;Sales - Dashboard - Sales&gt;
-	at junit.framework.Assert.assertEquals(Assert.java:81)
-	at junit.framework.Assert.assertEquals(Assert.java:87)
-	at com.vajra.TestClass.Login_TestCase_001.Login_TestCase_OE(Login_TestCase_001.java:73)
+<h2>Default test</h2><h3 id="m0">com.vajra.TestClass.CreateOrder_TestCase_002#OrderHeaderPage</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-next ng-binding&quot; ng-click=&quot;showNextStep()&quot; ng-disabled=&quot;!hasNext() &amp;amp;&amp;amp; !isFinish()&quot;&gt;...&lt;/button&gt; is not clickable at point (942, 601). Other element would receive the click: &lt;div class=&quot;container&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=89.0.4389.90)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;ISSLT551&apos;, ip: &apos;172.16.1.20&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_101&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.90, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\AKASH~1.SIN\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:54067}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 59926b68816ca375d87b1a553ed87cca
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy9.click(Unknown Source)
+	at com.vajra.pageobjects.CreateOrderPageObject.ClickOnNextButton(CreateOrderPageObject.java:127)
+	at com.vajra.TestClass.CreateOrder_TestCase_002.OrderHeaderPage(CreateOrder_TestCase_002.java:28)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -46,9 +69,6 @@
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.vajra.TestClass.Login_TestCase_001#Login_TestCase_Cashier</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">com.vajra.TestClass.Login_TestCase_001#Login_TestCase_OrderSection</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">com.vajra.TestClass.Login_TestCase_001#Login_TestCase_SE</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">com.vajra.TestClass.Login_TestCase_001#Login_TestCase_StoreHead</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.vajra.TestClass.CreateOrder_TestCase_002#SearchCustomer</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
