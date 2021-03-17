@@ -7,7 +7,7 @@ import com.vajra.pageobjects.LoginPageObject;
 
 import junit.framework.Assert;
 
-public class Login_TestCase_001 extends BaseClasss {
+public class TC_AllLogin_001 extends BaseClasss {
 
 	@Test(priority = 0)
 	public void Login_TestCase_SE() {

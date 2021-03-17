@@ -2,6 +2,7 @@ package com.vajra.TestClass;
 
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -30,7 +31,7 @@ public class BaseClasss {
 	public String envirnoment = readconfig.envirnoment();
 	public String Browser=readconfig.readBrowser();
 	public static WebDriver driver;
-	public static String SEID="13";
+	public static String SEID="63";
 	public static String SEpass="pass123";
 
 	public static String OrderSectionID="17";
@@ -49,6 +50,7 @@ public class BaseClasss {
 	// to call different testing environment
 	public static String SalesURL;
 	public static String OEURL;
+	
 public static String OrderCustomerID="8";
 	//public static String br;
 
@@ -59,11 +61,9 @@ public static String OrderCustomerID="8";
 	public void setup() { 
 		driverSetUp();
 		envSetUp();
+		
 	}
-	@AfterClass
-	public void teardown() {
-		driver.quit();
-	}
+
 	public void driverSetUp() {	
 		//br="chrome";
 		if(Browser.equals("Chrome")) {

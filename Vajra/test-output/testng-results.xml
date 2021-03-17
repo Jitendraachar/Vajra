@@ -2,58 +2,31 @@
 <testng-results skipped="0" failed="1" ignored="0" total="2" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="24402" started-at="2021-03-17T11:30:22 IST" finished-at="2021-03-17T11:30:46 IST">
+  <suite name="Default suite" duration-ms="28513" started-at="2021-03-17T14:10:58 IST" finished-at="2021-03-17T14:11:27 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="24402" started-at="2021-03-17T11:30:22 IST" finished-at="2021-03-17T11:30:46 IST">
-      <class name="com.vajra.TestClass.CreateOrder_TestCase_002">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.vajra.TestClass.CreateOrder_TestCase_002@1d29cf23]" name="setup" is-config="true" duration-ms="5108" started-at="2021-03-17T11:30:22 IST" finished-at="2021-03-17T11:30:27 IST">
+    <test name="Default test" duration-ms="28513" started-at="2021-03-17T14:10:58 IST" finished-at="2021-03-17T14:11:27 IST">
+      <class name="com.vajra.TestClass.TC_CreateCustomer_003">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.vajra.TestClass.TC_CreateCustomer_003@27a5f880]" name="setup" is-config="true" duration-ms="5244" started-at="2021-03-17T14:10:58 IST" finished-at="2021-03-17T14:11:04 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="SearchCustomer()[pri:1, instance:com.vajra.TestClass.CreateOrder_TestCase_002@1d29cf23]" name="SearchCustomer" duration-ms="12343" started-at="2021-03-17T11:30:27 IST" finished-at="2021-03-17T11:30:39 IST">
+        <test-method status="PASS" signature="navigateToCustomerPage()[pri:1, instance:com.vajra.TestClass.TC_CreateCustomer_003@27a5f880]" name="navigateToCustomerPage" duration-ms="12572" started-at="2021-03-17T14:11:04 IST" finished-at="2021-03-17T14:11:16 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- SearchCustomer -->
-        <test-method status="FAIL" signature="OrderHeaderPage()[pri:2, instance:com.vajra.TestClass.CreateOrder_TestCase_002@1d29cf23]" name="OrderHeaderPage" duration-ms="5156" started-at="2021-03-17T11:30:39 IST" finished-at="2021-03-17T11:30:44 IST">
-          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+        </test-method> <!-- navigateToCustomerPage -->
+        <test-method status="FAIL" signature="EnterCustomerDetails()[pri:2, instance:com.vajra.TestClass.TC_CreateCustomer_003@27a5f880]" name="EnterCustomerDetails" duration-ms="10546" started-at="2021-03-17T14:11:16 IST" finished-at="2021-03-17T14:11:27 IST">
+          <exception class="java.lang.NumberFormatException">
             <message>
-              <![CDATA[element click intercepted: Element <button type="button" class="btn btn-primary btn-next ng-binding" ng-click="showNextStep()" ng-disabled="!hasNext() &amp;&amp; !isFinish()">...</button> is not clickable at point (942, 601). Other element would receive the click: <div class="container">...</div>
-  (Session info: chrome=89.0.4389.90)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'ISSLT551', ip: '172.16.1.20', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_101'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.90, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\AKASH~1.SIN\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:54067}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 59926b68816ca375d87b1a553ed87cca]]>
+              <![CDATA[For input string: "✔ Customer with Id: 276 created successfully"]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button type="button" class="btn btn-primary btn-next ng-binding" ng-click="showNextStep()" ng-disabled="!hasNext() &amp;&amp; !isFinish()">...</button> is not clickable at point (942, 601). Other element would receive the click: <div class="container">...</div>
-  (Session info: chrome=89.0.4389.90)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'ISSLT551', ip: '172.16.1.20', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_101'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.90, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\AKASH~1.SIN\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:54067}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 59926b68816ca375d87b1a553ed87cca
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-at com.sun.proxy.$Proxy9.click(Unknown Source)
-at com.vajra.pageobjects.CreateOrderPageObject.ClickOnNextButton(CreateOrderPageObject.java:127)
-at com.vajra.TestClass.CreateOrder_TestCase_002.OrderHeaderPage(CreateOrder_TestCase_002.java:28)
+              <![CDATA[java.lang.NumberFormatException: For input string: "✔ Customer with Id: 276 created successfully"
+at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+at java.lang.Integer.parseInt(Integer.java:580)
+at java.lang.Integer.parseInt(Integer.java:615)
+at com.vajra.pageobjects.AddCustomerSales.VerifyCreatedCustomer(AddCustomerSales.java:182)
+at com.vajra.TestClass.TC_CreateCustomer_003.EnterCustomerDetails(TC_CreateCustomer_003.java:52)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -84,15 +57,11 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          </exception> <!-- java.lang.NumberFormatException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- OrderHeaderPage -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.vajra.TestClass.CreateOrder_TestCase_002@1d29cf23]" name="teardown" is-config="true" duration-ms="1658" started-at="2021-03-17T11:30:44 IST" finished-at="2021-03-17T11:30:46 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- com.vajra.TestClass.CreateOrder_TestCase_002 -->
+        </test-method> <!-- EnterCustomerDetails -->
+      </class> <!-- com.vajra.TestClass.TC_CreateCustomer_003 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
