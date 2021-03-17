@@ -130,7 +130,7 @@
                   <span class="method-name">Login_TestCase</span>
                   <div class="stack-trace">org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 84
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;ISSLT560&apos;, ip: &apos;172.16.1.4&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
+System info: host: &apos;ISSLT560&apos;, ip: &apos;172.16.1.5&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
 Driver info: driver.version: ChromeDriver
 remote stacktrace: Backtrace:
 	Ordinal0 [0x011487E3+2852835]
@@ -179,7 +179,7 @@ remote stacktrace: Backtrace:
 	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
 	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
 	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
-	at com.vajra.TestClass.BaseClasss.setup(BaseClasss.java:33)
+	at com.vajra.TestClass.BaseClasss.setup(BaseClasss.java:34)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 ... Removed 30 stack frames
 </div> <!-- stack-trace -->
@@ -198,6 +198,7 @@ remote stacktrace: Backtrace:
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;vajra&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Vajra&quot;&gt;
+    &lt;parameter name=&quot;envi&quot; value=&quot;Cloud&quot;/&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.vajra.TestClass.Login_TestCase_001&quot;/&gt;
@@ -284,11 +285,11 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">Login_TestCase</span>
-                <span class="method-start">7597 ms</span>
+                <span class="method-start">2641 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">7607 ms</span>
+                <span class="method-start">2661 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
