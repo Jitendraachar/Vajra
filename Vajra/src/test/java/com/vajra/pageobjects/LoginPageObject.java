@@ -13,8 +13,6 @@ public class LoginPageObject {
 		 driver=rdriver;
 		 PageFactory.initElements(rdriver, this);
 	 }
-	 
-	 
 		@FindBy(id="uname")
 		WebElement UserIDField;
 		

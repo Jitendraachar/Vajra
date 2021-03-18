@@ -2,6 +2,7 @@ package com.vajra.TestClass;
 
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -27,15 +28,30 @@ public class BaseClasss {
 	Readconfig readconfig = new Readconfig();
 	public String chrome = readconfig.readChrompath();
 	public String firefoxpath = readconfig.readFirefoxpath();
-//	public String envirnoment = readconfig.envirnoment();
+	public String envirnoment = readconfig.envirnoment();
 	public String Browser=readconfig.readBrowser();
 	public static WebDriver driver;
-public static String SEID="13";
+	public static String SEID="63";
+	public static String SEpass="pass123";
 
-public static String SEpass="pass123";
+	public static String OrderSectionID="17";
+	public static String OrderSectionPass="pass123";
 
+	public static String CashierID="15";
+	public static String CashierPass="pass123";
+
+	public static String StoreHeadID="11";
+	public static String StoreHeadPass="pass123";
+
+	public static String OEID="110";
+	public static String OEPass="pass123";
+	public static String SalesTittle="Sales - Dashboard - Sales";
+	public static String OETittle="";
 	// to call different testing environment
-	public static String URL;
+	public static String SalesURL;
+	public static String OEURL;
+	
+public static String OrderCustomerID="8";
 	//public static String br;
 
 
@@ -45,11 +61,9 @@ public static String SEpass="pass123";
 	public void setup() { 
 		driverSetUp();
 		envSetUp();
+		
 	}
-	@AfterClass
-	public void teardown() {
-		driver.quit();
-	}
+
 	public void driverSetUp() {	
 		//br="chrome";
 		if(Browser.equals("Chrome")) {
@@ -74,13 +88,16 @@ public static String SEpass="pass123";
 	}
 	public void envSetUp() {
 		//Setting up envoirment
-	String	envirnoment="Cloud";
+
 		if (envirnoment.equals("EXT")) {
-			URL = "https://www.google.com/";
+			SalesURL = "http://192.168.1.10:2013/Sales";
+			OEURL = "http://192.168.1.10:2013/OrderExecution";
 		} else if (envirnoment.equals("UAT")) {
-			URL = "https://www.google.com/";
+			SalesURL = "https://www.google.com/";
+			OEURL = "https://www.google.com/";
 		} else if (envirnoment.equals("Cloud")) {
-			URL = "http://103.1.114.170:2008/Sales/";
+			SalesURL = "http://103.1.114.170:2008/Sales";
+			OEURL = "http://103.1.114.170:2008/OrderExecution";
 		}
 
 
