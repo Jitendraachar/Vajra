@@ -8,7 +8,6 @@ import com.vajra.pageobjects.AddCustomerSales;
 import com.vajra.pageobjects.CreateOrderPageObject;
 
 public class TC_CreateCustomer_003 extends BaseClasss {
-
 	@Test(priority = 1)
 	public void navigateToCustomerPage() {
 		TC_AllLogin_001 tc= new TC_AllLogin_001();
@@ -17,7 +16,6 @@ public class TC_CreateCustomer_003 extends BaseClasss {
 		cop.ClickOnHomeCreateDocument();
 		cop.ClickOnSearchCustomer();
 	}
-
 	@Test(priority = 2)
 	public void EnterCustomerDetails() {
 		AddCustomerSales acs= new AddCustomerSales(driver);

@@ -27,7 +27,5 @@ public class TC_CreateOrder_002 extends BaseClasss{
 		cop.EnterOccasionRemarks();
 		cop.ClickOnNextButton();
 		cop.VerifyOrderItemPage();
-
 	}
 }
-
