@@ -5,6 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.Wait;
 
 public class AddCustomerSales {
 	WebDriver driver;
@@ -85,6 +86,7 @@ public class AddCustomerSales {
 
 
 	public void ClickOnCreateCustomerButton() {
+		
 		if(AddCusButton=AddCustomer.isDisplayed()) {
 			AddCustomer.click();
 
@@ -97,12 +99,12 @@ public class AddCustomerSales {
 	}
 
 	public void EnterCustomerFirstName() {
-		CustomerFirstName.sendKeys("Shiv");
+		CustomerFirstName.sendKeys("Shivaaaa");
 	}
 
 
 	public void EnterCustomerLastName() {
-		CustomerLastName.sendKeys("Shankar");
+		CustomerLastName.sendKeys("Shankaraaa");
 	}
 
 	public void SelectCustomerGender() {
@@ -127,18 +129,21 @@ public class AddCustomerSales {
 	}
 
 	public void EnterCustomerMobileNumberOne() {
-		CustomerMobileNumberOne.sendKeys("1344789987");
+		CustomerMobileNumberOne.sendKeys("1344689977");
 	}
 
 	public void EnterCustomerMobileNumberTwo() {
 		CustomerMobileNumberTwo.sendKeys("");
 	}
+	
 	public void EnterCustomerLandLineHomeNumber() {
 		CustomerlandLineHome.sendKeys("");
 	}
+	
 	public void EnterCustomerCustomerLandLineOffice() {
 		CustomerLandLineOffice.sendKeys("");
 	}
+	
 	public void SelectCustomerCountry() {
 		Select CusCountry=new Select(CustomerCountry);
 		CusCountry.selectByVisibleText("India");
@@ -156,11 +161,11 @@ public class AddCustomerSales {
 	}
 
 	public void EnterCustomerEmailID() {
-		CustomerEmailID.sendKeys("ShivShankar3456@gmail.com");
+		CustomerEmailID.sendKeys("ShivShankar3416@gmail.com");
 	}
 
 	public void EnterCustomerPINCode() {
-		CustomerPinCode.sendKeys("654111");
+		CustomerPinCode.sendKeys("654171");
 	}
 	public void EnterCustomerGSTNumber() {
 		CustomerGstinNo.sendKeys("");
@@ -179,6 +184,8 @@ public class AddCustomerSales {
 		if(SuccessMsgDisplay=SuccessMsg.isDisplayed()) {
 			String SuccessMessage=SuccessMsg.getText();
 			System.out.println(SuccessMessage);
+			
+			
 			int CustomerID = Integer.parseInt(SuccessMessage);
 			System.out.println("Customer ID is "+CustomerID);
 		}
