@@ -1,75 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="2" passed="1">
+<testng-results ignored="0" total="4" passed="2" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="18730" started-at="2021-03-22T13:58:42 IST" finished-at="2021-03-22T13:59:01 IST">
+  <suite started-at="2021-03-23T15:24:50 IST" name="vajra" finished-at="2021-03-23T15:25:12 IST" duration-ms="21982">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="18730" started-at="2021-03-22T13:58:42 IST" finished-at="2021-03-22T13:59:01 IST">
-      <class name="com.vajra.TestClass.TC_CreateCustomer_003">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.vajra.TestClass.TC_CreateCustomer_003@27a5f880]" name="setup" is-config="true" duration-ms="4875" started-at="2021-03-22T13:58:42 IST" finished-at="2021-03-22T13:58:47 IST">
+    <test started-at="2021-03-23T15:24:50 IST" name="Vajra" finished-at="2021-03-23T15:25:12 IST" duration-ms="21982">
+      <class name="com.vajra.TestClass.TC_AllLogin_001">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.vajra.TestClass.TC_AllLogin_001@e7edb54]" started-at="2021-03-23T15:24:50 IST" name="setup" finished-at="2021-03-23T15:24:58 IST" duration-ms="7933" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="navigateToCustomerPage()[pri:1, instance:com.vajra.TestClass.TC_CreateCustomer_003@27a5f880]" name="navigateToCustomerPage" duration-ms="13012" started-at="2021-03-22T13:58:47 IST" finished-at="2021-03-22T13:59:00 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- navigateToCustomerPage -->
-        <test-method status="FAIL" signature="EnterCustomerDetails()[pri:2, instance:com.vajra.TestClass.TC_CreateCustomer_003@27a5f880]" name="EnterCustomerDetails" duration-ms="717" started-at="2021-03-22T13:59:00 IST" finished-at="2021-03-22T13:59:01 IST">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        <test-method signature="LoginSales(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.vajra.TestClass.TC_AllLogin_001@e7edb54]" started-at="2021-03-23T15:24:58 IST" name="LoginSales" data-provider="logindata" finished-at="2021-03-23T15:24:58 IST" duration-ms="0" status="FAIL">
+          <exception class="org.testng.TestNGException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"partial link text","selector":"Add New Custom"}
-  (Session info: chrome=89.0.4389.90)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'ISSLT551', ip: '172.16.1.18', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_101'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.90, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\AKASH~1.SIN\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:52304}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: ac8c2eb8f489f83b9e591a5f0ab787d7
-*** Element info: {Using=partial link text, value=Add New Custom}]]>
+              <![CDATA[
+Method public void com.vajra.TestClass.TC_AllLogin_001.LoginSales(java.lang.String,java.lang.String,java.lang.String) throws java.lang.InterruptedException,java.io.IOException requires a @DataProvider named : logindata]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"partial link text","selector":"Add New Custom"}
-  (Session info: chrome=89.0.4389.90)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'ISSLT551', ip: '172.16.1.18', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_101'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.90, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\AKASH~1.SIN\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:52304}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: ac8c2eb8f489f83b9e591a5f0ab787d7
-*** Element info: {Using=partial link text, value=Add New Custom}
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByPartialLinkText(RemoteWebDriver.java:388)
-at org.openqa.selenium.By$ByPartialLinkText.findElement(By.java:250)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at com.sun.proxy.$Proxy8.isDisplayed(Unknown Source)
-at com.vajra.pageobjects.AddCustomerSales.ClickOnCreateCustomerButton(AddCustomerSales.java:88)
-at com.vajra.TestClass.TC_CreateCustomer_003.EnterCustomerDetails(TC_CreateCustomer_003.java:22)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+              <![CDATA[org.testng.TestNGException: 
+Method public void com.vajra.TestClass.TC_AllLogin_001.LoginSales(java.lang.String,java.lang.String,java.lang.String) throws java.lang.InterruptedException,java.io.IOException requires a @DataProvider named : logindata
+at org.testng.internal.Parameters.findDataProvider(Parameters.java:563)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:776)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:744)
+at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:59)
+at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:38)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:783)
 at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
 at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
 at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(ArrayList.java:1249)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 at org.testng.TestRunner.privateRun(TestRunner.java:766)
 at org.testng.TestRunner.run(TestRunner.java:587)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
@@ -87,11 +47,63 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- EnterCustomerDetails -->
-      </class> <!-- com.vajra.TestClass.TC_CreateCustomer_003 -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- LoginSales -->
+        <test-method signature="Login_TestCase_SE()[pri:0, instance:com.vajra.TestClass.TC_AllLogin_001@e7edb54]" started-at="2021-03-23T15:24:58 IST" name="Login_TestCase_SE" finished-at="2021-03-23T15:25:04 IST" duration-ms="5905" status="FAIL">
+          <exception class="junit.framework.ComparisonFailure">
+            <message>
+              <![CDATA[expected:<Login> but was:<Sales - Dashboard - Sales>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[junit.framework.ComparisonFailure: expected:<Login> but was:<Sales - Dashboard - Sales>
+at junit.framework.Assert.assertEquals(Assert.java:81)
+at junit.framework.Assert.assertEquals(Assert.java:87)
+at com.vajra.TestClass.TC_AllLogin_001.Login_TestCase_SE(TC_AllLogin_001.java:53)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- junit.framework.ComparisonFailure -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login_TestCase_SE -->
+        <test-method signature="Login_TestCase_OrderSection()[pri:1, instance:com.vajra.TestClass.TC_AllLogin_001@e7edb54]" started-at="2021-03-23T15:25:04 IST" name="Login_TestCase_OrderSection" finished-at="2021-03-23T15:25:11 IST" duration-ms="6545" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login_TestCase_OrderSection -->
+        <test-method signature="Login_TestCase_Cashier()[pri:2, instance:com.vajra.TestClass.TC_AllLogin_001@e7edb54]" started-at="2021-03-23T15:25:11 IST" name="Login_TestCase_Cashier" finished-at="2021-03-23T15:25:12 IST" duration-ms="1514" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login_TestCase_Cashier -->
+      </class> <!-- com.vajra.TestClass.TC_AllLogin_001 -->
+    </test> <!-- Vajra -->
+  </suite> <!-- vajra -->
 </testng-results>
