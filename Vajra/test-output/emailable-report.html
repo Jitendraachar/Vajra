@@ -9,21 +9,18 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">vajra</th></tr>
-<tr><td><a href="#t0">Vajra</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">21,982</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Vajra</a></td><td class="num">0</td><td class="num attn">1</td><td class="num">0</td><td class="num">0</td><td class="num">2,157</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">vajra</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Vajra &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">com.vajra.TestClass.TC_AllLogin_001</td><td><a href="#m0">LoginSales</a></td><td rowspan="1">1616493298582</td><td rowspan="1">0</td></tr><tr class="failedeven"><td><a href="#m1">Login_TestCase_SE</a></td><td rowspan="1">1616493298617</td><td rowspan="1">5905</td></tr><tr><th colspan="4">Vajra &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">com.vajra.TestClass.TC_AllLogin_001</td><td><a href="#m2">Login_TestCase_Cashier</a></td><td rowspan="1">1616493311079</td><td rowspan="1">1514</td></tr><tr class="passedeven"><td><a href="#m3">Login_TestCase_OrderSection</a></td><td rowspan="1">1616493304529</td><td rowspan="1">6545</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">vajra</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Vajra &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">com.vajra.TestClass.TC_AllLogin_001</td><td><a href="#m0">LoginSales</a></td><td rowspan="1">1616563622781</td><td rowspan="1">0</td></tr></tbody>
 </table>
-<h2>Vajra</h2><h3 id="m0">com.vajra.TestClass.TC_AllLogin_001#LoginSales</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.TestNGException: 
-Method public void com.vajra.TestClass.TC_AllLogin_001.LoginSales(java.lang.String,java.lang.String,java.lang.String) throws java.lang.InterruptedException,java.io.IOException requires a @DataProvider named : logindata
+<h2>Vajra</h2><h3 id="m0">com.vajra.TestClass.TC_AllLogin_001#LoginSales</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.RuntimeException: java.lang.NullPointerException
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 24 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.vajra.TestClass.TC_AllLogin_001#Login_TestCase_SE</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">junit.framework.ComparisonFailure: expected:&lt;Login&gt; but was:&lt;Sales - Dashboard - Sales&gt;
-	at junit.framework.Assert.assertEquals(Assert.java:81)
-	at junit.framework.Assert.assertEquals(Assert.java:87)
-	at com.vajra.TestClass.TC_AllLogin_001.Login_TestCase_SE(TC_AllLogin_001.java:53)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">com.vajra.TestClass.TC_AllLogin_001#Login_TestCase_Cashier</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">com.vajra.TestClass.TC_AllLogin_001#Login_TestCase_OrderSection</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+Caused by: java.lang.NullPointerException
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:145)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:108)
+	at com.vajra.utilities.XLUtilities.getRowCount(XLUtilities.java:24)
+	at com.vajra.TestClass.TC_AllLogin_001.login(TC_AllLogin_001.java:18)
+	... 25 more
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

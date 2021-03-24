@@ -7,7 +7,6 @@
       <class name="com.vajra.TestClass.TC_AllLogin_001">
         <methods>
           <include name="LoginSales"/>
-          <include name="Login_TestCase_SE"/>
           <include name="setup"/>
         </methods>
       </class> <!-- com.vajra.TestClass.TC_AllLogin_001 -->

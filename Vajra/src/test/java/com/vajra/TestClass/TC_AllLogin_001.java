@@ -14,7 +14,7 @@ public class TC_AllLogin_001 extends BaseClasss {
 	
 	@DataProvider(name ="loginDetails") 
 	public static Object[][] login()throws IOException {
-		String path=System.getProperty("userdir")+"/src/test/java/com/vajra/TestData/Usernameandpassword.xlsx";
+		String path=System.getProperty("C:\\Users\\jitendra.y\\git\\Vajra\\Vajra\\src\\test\\java\\com\\vajra\\TestData\\Usernameandpassword.xlsx");
 		int rownum=XLUtilities.getRowCount(path, "Sale Login");
 		int cocount=XLUtilities.getCellCount(path, "Sale Login", 1);
 		String logindata[][]=new String [rownum][cocount];
@@ -29,56 +29,44 @@ public class TC_AllLogin_001 extends BaseClasss {
 		
 	}
 	
-	@Test(dataProvider="logindata")
-	public void LoginSales(String number,String User, String Password)throws InterruptedException,IOException
+	@Test(dataProvider="loginDetails")
+	public void LoginSales(String User, String Password)throws InterruptedException,IOException
 	{
-		LoginPageObject lpo=new LoginPageObject(driver);
+		LoginPageObject lpo= new LoginPageObject(driver);
 		driver.get(SalesURL);
 		lpo.EnterUserID(User);
 		lpo.EnterUserPass(Password);
-		
-		
-	}
-
-	@Test(priority = 0)
-	public void Login_TestCase_SE() {
-		//initiate the driver
-		LoginPageObject lpo= new LoginPageObject(driver);
-
-		driver.get(SalesURL);
-
-		lpo.EnterUserID(SEID);
-		lpo.EnterUserPass(SEpass);
 		lpo.ClickOnLoginButton();
 		Assert.assertEquals(driver.getTitle(), SalesTittle);
+		captureScreenShot(driver, "loginsales");
 	}
-	
-	@Test(priority = 1)
-	public void Login_TestCase_OrderSection() {
-		//initiate the driver
-		LoginPageObject lpo= new LoginPageObject(driver);
-		driver.get(SalesURL);
 
-		lpo.EnterUserID(OrderSectionID);
-		lpo.EnterUserPass(OrderSectionPass);
-		lpo.ClickOnLoginButton();
-		Assert.assertEquals(driver.getTitle(), SalesTittle);
-	}
-	
-	@Test(priority = 2)
-	public void Login_TestCase_Cashier() {
-		//initiate the driver
-		LoginPageObject lpo= new LoginPageObject(driver);
-
-		driver.get(SalesURL);
-
-		lpo.EnterUserID(CashierID);
-		lpo.EnterUserPass(CashierPass);
-		lpo.ClickOnLoginButton();
-		Assert.assertEquals(driver.getTitle(), SalesTittle);
-	}
-	
 	/*
+	 * @Test(priority = 0) public void Login_TestCase_SE() { //initiate the driver
+	 * LoginPageObject lpo= new LoginPageObject(driver);
+	 * 
+	 * driver.get(SalesURL);
+	 * 
+	 * lpo.EnterUserID(SEID); lpo.EnterUserPass(SEpass); lpo.ClickOnLoginButton();
+	 * Assert.assertEquals(driver.getTitle(), SalesTittle); }
+	 * 
+	 * @Test(priority = 1) public void Login_TestCase_OrderSection() { //initiate
+	 * the driver LoginPageObject lpo= new LoginPageObject(driver);
+	 * driver.get(SalesURL);
+	 * 
+	 * lpo.EnterUserID(OrderSectionID); lpo.EnterUserPass(OrderSectionPass);
+	 * lpo.ClickOnLoginButton(); Assert.assertEquals(driver.getTitle(),
+	 * SalesTittle); }
+	 * 
+	 * @Test(priority = 2) public void Login_TestCase_Cashier() { //initiate the
+	 * driver LoginPageObject lpo= new LoginPageObject(driver);
+	 * 
+	 * driver.get(SalesURL);
+	 * 
+	 * lpo.EnterUserID(CashierID); lpo.EnterUserPass(CashierPass);
+	 * lpo.ClickOnLoginButton(); Assert.assertEquals(driver.getTitle(),
+	 * SalesTittle); }
+	 * 
 	 * @Test (priority = 3) public void Login_TestCase_StoreHead() { //initiate the
 	 * driver LoginPageObject lpo= new LoginPageObject(driver);
 	 * 
