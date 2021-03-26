@@ -24,21 +24,20 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
         <span>All suites</span>
-        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
-          <img class="collapse-all-icon" src="collapseall.gif">
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
           </img> <!-- collapse-all-icon -->
         </a> <!-- collapse-all-link -->
       </div> <!-- navigator-suite-header -->
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" class="navigator-link" panel-name="suite-vajra">
-              <span class="suite-name border-failed">vajra</span>
+
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -48,37 +47,26 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="test-xml-vajra">
-                    <span>C:\Users\ali.ashmi\git\Vajra\Vajra\testng.xml</span>
-                  </a> <!-- navigator-link  -->
-                </li>
-                <li>
-                  <a href="#" class="navigator-link " panel-name="testlist-vajra">
                     <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="group-vajra">
                     <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="times-vajra">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="reporter-vajra">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="ignored-methods-vajra">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="chronological-vajra">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -91,21 +79,6 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods, 1 failed,   4 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-vajra" class="hide-methods failed suite-vajra"> (hide)</a> <!-- hide-methods failed suite-vajra -->
-                      <a href="#" panel-name="suite-vajra" class="show-methods failed suite-vajra"> (show)</a> <!-- show-methods failed suite-vajra -->
-                    </span>
-                    <div class="method-list-content failed suite-vajra">
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-vajra" title="com.vajra.TestClass.TC_AllLogin_001" hash-for-method="Login_TestCase_SE">Login_TestCase_SE</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-vajra -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -115,8 +88,6 @@
                     </span>
                     <div class="method-list-content passed suite-vajra">
                       <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-vajra" title="com.vajra.TestClass.TC_AllLogin_001" hash-for-method="Login_TestCase_Cashier">Login_TestCase_Cashier</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -145,61 +116,14 @@
     </div> <!-- navigator-root -->
     <div class="wrapper">
       <div class="main-panel-root">
-        <div panel-name="suite-vajra" class="panel vajra">
-          <div class="suite-vajra-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">com.vajra.TestClass.TC_AllLogin_001</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="Login_TestCase_SE">
-                  </a> <!-- Login_TestCase_SE -->
-                  <span class="method-name">Login_TestCase_SE</span>
-                  <div class="stack-trace">junit.framework.ComparisonFailure: expected:&lt;Login&gt; but was:&lt;Sales - Dashboard - Sales&gt;
-	at junit.framework.Assert.assertEquals(Assert.java:81)
-	at junit.framework.Assert.assertEquals(Assert.java:87)
-	at com.vajra.TestClass.TC_AllLogin_001.Login_TestCase_SE(TC_AllLogin_001.java:22)
-	at java.util.ArrayList.forEach(Unknown Source)
-... Removed 27 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-vajra-class-failed -->
-          <div class="suite-vajra-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.vajra.TestClass.TC_AllLogin_001</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="Login_TestCase_Cashier">
-                  </a> <!-- Login_TestCase_Cashier -->
-                  <span class="method-name">Login_TestCase_Cashier</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="Login_TestCase_OE">
-                  </a> <!-- Login_TestCase_OE -->
-                  <span class="method-name">Login_TestCase_OE</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="Login_TestCase_OrderSection">
-                  </a> <!-- Login_TestCase_OrderSection -->
-                  <span class="method-name">Login_TestCase_OrderSection</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="Login_TestCase_StoreHead">
-                  </a> <!-- Login_TestCase_StoreHead -->
-                  <span class="method-name">Login_TestCase_StoreHead</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -207,17 +131,11 @@
         </div> <!-- panel vajra -->
         <div panel-name="test-xml-vajra" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\ali.ashmi\git\Vajra\Vajra\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;vajra&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Vajra&quot;&gt;
-    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
-    &lt;classes&gt;
-      &lt;class name=&quot;com.vajra.TestClass.TC_AllLogin_001&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Vajra --&gt;
 &lt;/suite&gt; &lt;!-- vajra --&gt;
@@ -257,34 +175,6 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(5);
-data.setCell(0, 0, 0)
-data.setCell(0, 1, 'Login_TestCase_OrderSection')
-data.setCell(0, 2, 'com.vajra.TestClass.TC_AllLogin_001')
-data.setCell(0, 3, 4720);
-data.setCell(1, 0, 1)
-data.setCell(1, 1, 'Login_TestCase_SE')
-data.setCell(1, 2, 'com.vajra.TestClass.TC_AllLogin_001')
-data.setCell(1, 3, 3325);
-data.setCell(2, 0, 2)
-data.setCell(2, 1, 'Login_TestCase_OE')
-data.setCell(2, 2, 'com.vajra.TestClass.TC_AllLogin_001')
-data.setCell(2, 3, 3184);
-data.setCell(3, 0, 3)
-data.setCell(3, 1, 'Login_TestCase_Cashier')
-data.setCell(3, 2, 'com.vajra.TestClass.TC_AllLogin_001')
-data.setCell(3, 3, 1680);
-data.setCell(4, 0, 4)
-data.setCell(4, 1, 'Login_TestCase_StoreHead')
-data.setCell(4, 2, 'com.vajra.TestClass.TC_AllLogin_001')
-data.setCell(4, 3, 1220);
-window.suiteTableData['vajra']= { tableData: data, tableDiv: 'times-div-vajra'}
-return data;
-}
-              </script>
-              <span class="suite-total-time">Total running time: 14 seconds</span>
-              <div id="times-div-vajra">
-              </div> <!-- times-div-vajra -->
             </div> <!-- times-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
@@ -308,32 +198,11 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.vajra.TestClass.TC_AllLogin_001</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setup</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">Login_TestCase_SE</span>
-                <span class="method-start">3840 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">Login_TestCase_OrderSection</span>
-                <span class="method-start">7177 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">Login_TestCase_Cashier</span>
-                <span class="method-start">11901 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">Login_TestCase_StoreHead</span>
-                <span class="method-start">13582 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">Login_TestCase_OE</span>
-                <span class="method-start">14804 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
