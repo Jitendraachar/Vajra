@@ -22,6 +22,11 @@ public class LoginPageObject {
 		@FindBy(className ="btn-primary")
 		WebElement LoginButton;
 		
+		@FindBy(xpath = "/html/body/div[1]/nav/div/div[2]/ul[2]/li[3]/a/span/span")
+		WebElement logoutlink;
+		
+		@FindBy(xpath = "/html/body/div[1]/nav/div/div[2]/ul[2]/li[3]/ul/li[2]/a")
+		WebElement logoutbutton;
 		
 		public void EnterUserID(String sEID) {
 			UserIDField.sendKeys(sEID);
@@ -37,5 +42,11 @@ public class LoginPageObject {
 				String title = driver.getTitle();
 				return title;
 			}
+			public void logoutlink() {
+				logoutlink.click();
+				logoutbutton.click();
+			}
+			
 	}
+
 
