@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="0" failed="0" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-03-24T10:57:00 IST" name="vajra" finished-at="2021-03-24T10:57:02 IST" duration-ms="2157">
+  <suite started-at="2021-03-25T16:57:49 IST" name="vajra" finished-at="2021-03-25T16:57:52 IST" duration-ms="2389">
     <groups>
     </groups>
-    <test started-at="2021-03-24T10:57:00 IST" name="Vajra" finished-at="2021-03-24T10:57:02 IST" duration-ms="2157">
-      <class name="com.vajra.TestClass.TC_AllLogin_001">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.vajra.TestClass.TC_AllLogin_001@74455848]" started-at="2021-03-24T10:57:00 IST" name="setup" finished-at="2021-03-24T10:57:02 IST" duration-ms="2098" status="PASS">
+    <test started-at="2021-03-25T16:57:49 IST" name="Vajra" finished-at="2021-03-25T16:57:52 IST" duration-ms="2389">
+      <class name="com.vajra.TestClass.LoginusingExcelsheet">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.vajra.TestClass.LoginusingExcelsheet@74455848]" started-at="2021-03-25T16:57:49 IST" name="setup" finished-at="2021-03-25T16:57:52 IST" duration-ms="2323" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="LoginSales(java.lang.String, java.lang.String)[pri:0, instance:com.vajra.TestClass.TC_AllLogin_001@74455848]" started-at="2021-03-24T10:57:02 IST" name="LoginSales" data-provider="loginDetails" finished-at="2021-03-24T10:57:02 IST" duration-ms="0" status="SKIP">
+        <test-method signature="loginSales(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.vajra.TestClass.LoginusingExcelsheet@74455848]" started-at="2021-03-25T16:57:52 IST" name="loginSales" data-provider="LoginUserIDs" finished-at="2021-03-25T16:57:52 IST" duration-ms="0" status="SKIP">
           <exception class="java.lang.RuntimeException">
             <message>
               <![CDATA[java.lang.NullPointerException]]>
@@ -48,7 +48,7 @@ Caused by: java.lang.NullPointerException
 at java.base/java.io.FileInputStream.<init>(FileInputStream.java:145)
 at java.base/java.io.FileInputStream.<init>(FileInputStream.java:108)
 at com.vajra.utilities.XLUtilities.getRowCount(XLUtilities.java:24)
-at com.vajra.TestClass.TC_AllLogin_001.login(TC_AllLogin_001.java:18)
+at com.vajra.TestClass.LoginusingExcelsheet.login(LoginusingExcelsheet.java:24)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -62,8 +62,8 @@ at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(Met
           </exception> <!-- java.lang.RuntimeException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- LoginSales -->
-      </class> <!-- com.vajra.TestClass.TC_AllLogin_001 -->
+        </test-method> <!-- loginSales -->
+      </class> <!-- com.vajra.TestClass.LoginusingExcelsheet -->
     </test> <!-- Vajra -->
   </suite> <!-- vajra -->
 </testng-results>
