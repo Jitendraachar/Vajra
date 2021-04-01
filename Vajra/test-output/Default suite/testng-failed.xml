@@ -5,7 +5,7 @@
     <classes>
       <class name="com.vajra.TestClass.LoginusingExcelsheet">
         <methods>
-          <include name="loginSales" invocation-numbers="0 2"/>
+          <include name="loginSales" invocation-numbers="0 1 2 3"/>
           <include name="setup"/>
         </methods>
       </class> <!-- com.vajra.TestClass.LoginusingExcelsheet -->

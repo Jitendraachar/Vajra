@@ -4,7 +4,7 @@
   <test name="Vajra">
   <parameter name="browser" value="chrome"/>
   <classes>
-  <class name="com.vajra.TestClass.TC_AllLOgin001"/>
+  <class name="com.vajra.TestClass.LoginusingExcelsheet"/>
   </classes>
   </test> 
 </suite> 

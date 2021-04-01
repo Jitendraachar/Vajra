@@ -1,5 +1,6 @@
 package com.vajra.TestClass;
 import java.io.IOException;
+import java.util.concurrent.TimeUnit;
 
 import org.testng.annotations.*;
 
@@ -11,17 +12,18 @@ import junit.framework.Assert;
 public class LoginusingExcelsheet extends BaseClasss{
 
 	@Test(dataProvider="LoginUserIDs")
-	public void loginSales(String username, String Passowrd,String exp)throws IOException,InterruptedException {
+	public void loginSales(String username, String Passowrd,String Exc)throws IOException,InterruptedException {
 		driver.get(SalesURL);
 		LoginPageObject LPO=new LoginPageObject(driver);
 
 		LPO.EnterUserID(username);
 		LPO.EnterUserPass(Passowrd);
 		LPO.ClickOnLoginButton();
-		String exp_title="Sales - Dashboard - Sales";
 		String Actual_title=driver.getTitle();
-
-		if(exp.equals("Valid"))
+		String exp_title="Sales - Dashboard - Sales";
+		captureScreenShot(driver, "Login Page");
+		
+		if(Exc.equals("Valid"))
 		{
 			if(exp_title.equals(Actual_title))
 			{
@@ -35,7 +37,7 @@ public class LoginusingExcelsheet extends BaseClasss{
 
 			}
 		}
-		else if(exp.equals("Invalid"))
+		else if(Exc.equals("Invalid"))
 		{
 			if(exp_title.equals(Actual_title))
 			{
@@ -51,14 +53,24 @@ public class LoginusingExcelsheet extends BaseClasss{
 
 	}
 	@DataProvider(name="LoginUserIDs")
-	public String[][] getdata(){
-		String logindata[][]= {
-				{"19","gouri@28","Valid"},
-				{"0","pass123","Invalid"},
-				{"15","pass123","Valid"}
-		};
-
-
+	public String[][] getdata() throws IOException, InterruptedException{
+		String path="C:\\Users\\jitendra.y\\git\\Vajra\\Vajra\\src\\test\\java\\com\\vajra\\TestData\\Usernameandpassword.xlsx";
+		//XLUtilities xlutil= new XLUtilities(path);
+		
+		int totalrows=XLUtilities.getRowCount(path,"Sale Login");
+		int totalcols=XLUtilities.getCellCount(path, "Sale Login", 0);
+		
+		String logindata[][]= new String[totalrows][totalcols];
+		
+		for(int i=1;i<=totalrows;i++)
+		{
+			for (int j=0;j<totalcols;j++)
+			{
+				logindata[i-1][j]=XLUtilities.getCellData(path,"Sale Login", i, j);
+				
+			}
+		}
+		
 		return 	logindata;
 	}
 

@@ -14,10 +14,10 @@ public class LoginPageObject {
 		PageFactory.initElements(rdriver, this);
 	}
 	@FindBy(id="uname")
-	WebElement UserIDField;
+	private WebElement UserIDField;
 
 	@FindBy(id="passwd")
-	WebElement PasswordFiled;
+	private WebElement PasswordFiled;
 
 	@FindBy(className ="btn-primary")
 	WebElement LoginButton;
