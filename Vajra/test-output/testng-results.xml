@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-04-01T16:06:05 IST" name="Default suite" finished-at="2021-04-01T16:06:50 IST" duration-ms="45432">
+  <suite started-at="2021-04-05T13:35:40 IST" name="Default suite" finished-at="2021-04-05T13:36:17 IST" duration-ms="37282">
     <groups>
     </groups>
-    <test started-at="2021-04-01T16:06:05 IST" name="Default test" finished-at="2021-04-01T16:06:50 IST" duration-ms="45432">
-      <class name="com.vajra.TestClass.LoginusingExcelsheet">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.vajra.TestClass.LoginusingExcelsheet@346d61be]" started-at="2021-04-01T16:06:05 IST" name="setup" finished-at="2021-04-01T16:06:07 IST" duration-ms="2267" status="PASS">
+    <test started-at="2021-04-05T13:35:40 IST" name="Default test" finished-at="2021-04-05T13:36:17 IST" duration-ms="37282">
+      <class name="com.vajra.TestClass.TC_Sales_Login">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.vajra.TestClass.TC_Sales_Login@346d61be]" started-at="2021-04-05T13:35:40 IST" name="setup" finished-at="2021-04-05T13:35:42 IST" duration-ms="2268" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="loginSales(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.vajra.TestClass.LoginusingExcelsheet@346d61be]" started-at="2021-04-01T16:06:09 IST" name="loginSales" data-provider="LoginUserIDs" finished-at="2021-04-01T16:06:21 IST" duration-ms="11995" status="PASS">
+        <test-method signature="loginSales(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.vajra.TestClass.TC_Sales_Login@346d61be]" started-at="2021-04-05T13:35:44 IST" name="loginSales" data-provider="LoginUserIDs" finished-at="2021-04-05T13:35:54 IST" duration-ms="9648" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -32,7 +32,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginSales -->
-        <test-method signature="loginSales(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.vajra.TestClass.LoginusingExcelsheet@346d61be]" started-at="2021-04-01T16:06:21 IST" name="loginSales" data-provider="LoginUserIDs" finished-at="2021-04-01T16:06:31 IST" duration-ms="10274" status="PASS">
+        <test-method signature="loginSales(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.vajra.TestClass.TC_Sales_Login@346d61be]" started-at="2021-04-05T13:35:54 IST" name="loginSales" data-provider="LoginUserIDs" finished-at="2021-04-05T13:36:00 IST" duration-ms="6662" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -53,7 +53,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginSales -->
-        <test-method signature="loginSales(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.vajra.TestClass.LoginusingExcelsheet@346d61be]" started-at="2021-04-01T16:06:31 IST" name="loginSales" data-provider="LoginUserIDs" finished-at="2021-04-01T16:06:39 IST" duration-ms="8054" status="PASS">
+        <test-method signature="loginSales(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.vajra.TestClass.TC_Sales_Login@346d61be]" started-at="2021-04-05T13:36:00 IST" name="loginSales" data-provider="LoginUserIDs" finished-at="2021-04-05T13:36:08 IST" duration-ms="7473" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -74,7 +74,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginSales -->
-        <test-method signature="loginSales(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.vajra.TestClass.LoginusingExcelsheet@346d61be]" started-at="2021-04-01T16:06:39 IST" name="loginSales" data-provider="LoginUserIDs" finished-at="2021-04-01T16:06:48 IST" duration-ms="8361" status="PASS">
+        <test-method signature="loginSales(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.vajra.TestClass.TC_Sales_Login@346d61be]" started-at="2021-04-05T13:36:08 IST" name="loginSales" data-provider="LoginUserIDs" finished-at="2021-04-05T13:36:15 IST" duration-ms="6741" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -95,7 +95,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginSales -->
-        <test-method signature="loginSales(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.vajra.TestClass.LoginusingExcelsheet@346d61be]" started-at="2021-04-01T16:06:48 IST" name="loginSales" data-provider="LoginUserIDs" finished-at="2021-04-01T16:06:49 IST" duration-ms="1336" status="PASS">
+        <test-method signature="loginSales(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.vajra.TestClass.TC_Sales_Login@346d61be]" started-at="2021-04-05T13:36:15 IST" name="loginSales" data-provider="LoginUserIDs" finished-at="2021-04-05T13:36:16 IST" duration-ms="1360" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -116,7 +116,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginSales -->
-        <test-method signature="loginSales(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.vajra.TestClass.LoginusingExcelsheet@346d61be]" started-at="2021-04-01T16:06:49 IST" name="loginSales" data-provider="LoginUserIDs" finished-at="2021-04-01T16:06:50 IST" duration-ms="1209" status="PASS">
+        <test-method signature="loginSales(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.vajra.TestClass.TC_Sales_Login@346d61be]" started-at="2021-04-05T13:36:16 IST" name="loginSales" data-provider="LoginUserIDs" finished-at="2021-04-05T13:36:17 IST" duration-ms="1197" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -137,7 +137,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginSales -->
-      </class> <!-- com.vajra.TestClass.LoginusingExcelsheet -->
+      </class> <!-- com.vajra.TestClass.TC_Sales_Login -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
