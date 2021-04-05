@@ -4,13 +4,12 @@
   <test thread-count="5" name="Vajra(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="com.vajra.TestClass.TC_AllLogin_001">
+      <class name="com.vajra.TestClass.LoginusingExcelsheet">
         <methods>
-          <include name="LoginSales"/>
-          <include name="Login_TestCase_SE"/>
+          <include name="loginSales"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- com.vajra.TestClass.TC_AllLogin_001 -->
+      </class> <!-- com.vajra.TestClass.LoginusingExcelsheet -->
     </classes>
   </test> <!-- Vajra(failed) -->
 </suite> <!-- Failed suite [vajra] -->

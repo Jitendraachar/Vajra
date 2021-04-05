@@ -4,7 +4,7 @@
   <test name="Vajra">
   <parameter name="browser" value="chrome"/>
   <classes>
-  <class name="com.vajra.TestClass.TC_AllLogin_001"/>
+  <class name="com.vajra.TestClass.TC_AllLOgin001"/>
   </classes>
   </test> 
 </suite> 

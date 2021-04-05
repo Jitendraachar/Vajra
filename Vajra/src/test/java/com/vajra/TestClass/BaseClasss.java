@@ -1,8 +1,13 @@
 package com.vajra.TestClass;
 
+import java.io.File;
+import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -31,21 +36,20 @@ public class BaseClasss {
 	public String envirnoment = readconfig.envirnoment();
 	public String Browser=readconfig.readBrowser();
 	public static WebDriver driver;
-	public static String SEID="63";
-	public static String SEpass="pass123";
-
-	public static String OrderSectionID="17";
-	public static String OrderSectionPass="pass123";
-
-	public static String CashierID="15";
-	public static String CashierPass="pass123";
-
-	public static String StoreHeadID="11";
-	public static String StoreHeadPass="pass123";
-
-	public static String OEID="110";
-	public static String OEPass="pass123";
-	public static String SalesTittle="Sales - Dashboard - Sales";
+	/*
+	 * public static String SEID="63"; public static String SEpass="pass123";
+	 * 
+	 * public static String OrderSectionID="17"; public static String
+	 * OrderSectionPass="pass123";
+	 * 
+	 * public static String CashierID="15"; public static String
+	 * CashierPass="pass123";
+	 * 
+	 * public static String StoreHeadID="11"; public static String
+	 * StoreHeadPass="pass123";
+	 * 
+	 * public static String OEID="110"; public static String OEPass="pass123";
+	 */	public static String SalesTittle="Sales - Dashboard - Sales";
 	public static String OETittle="";
 	// to call different testing environment
 	public static String SalesURL;
@@ -99,6 +103,15 @@ public static String OrderCustomerID="8";
 			OEURL = "http://103.1.114.170:2008/OrderExecution";
 		}
 
-
 	}
+
+	public void captureScreenShot(WebDriver driver,String tname)throws IOException 
+	{
+		TakesScreenshot ts=((TakesScreenshot)driver);
+		File Src=ts.getScreenshotAs(OutputType.FILE);
+		File Trgt=new File("C:\\Users\\jitendra.y\\workspace\\VajraV1\\ScreenShots"+tname+".png");
+		FileUtils.copyFile(Src, Trgt);
+	}
+	
 }
+	
