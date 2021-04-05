@@ -17,7 +17,10 @@ public class XLUtilities {
 	public static XSSFSheet ws;
 	public static XSSFRow row;
 	public static XSSFCell cell;
-	
+	String path=null;
+	public XLUtilities(String path) {
+		this.path=path;
+	}
 	
 	public static int getRowCount(String xlfile,String xlsheet) throws IOException 
 	{
