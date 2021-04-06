@@ -22,7 +22,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
 
-import com.vajra.utilities.Readconfig;
+import Vajra.src.test.java.com.vajra.utilities.*;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
