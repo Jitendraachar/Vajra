@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.vajra.TestClass.TC_Sales_Login">
+      <class name="com.vajra.TestClass.TC_Customer_New_Order_N_S_A_">
         <methods>
-          <include name="loginSales" invocation-numbers="0 1 2 3 4 5"/>
+          <include name="loginSales" invocation-numbers="0"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- com.vajra.TestClass.TC_Sales_Login -->
+      </class> <!-- com.vajra.TestClass.TC_Customer_New_Order_N_S_A_ -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
