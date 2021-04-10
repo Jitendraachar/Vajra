@@ -14,42 +14,6 @@ import junit.framework.Assert;
 import com.vajra.utilities.*;
 public class TC_AllLogin_001 extends BaseClasss {
 
-	@Test(dataProvider="LoginUserIDs")
-	public void loginSales(String username, String Passowrd,String Exc, String LoginType)throws IOException,InterruptedException {
-		driver.get(SalesURL);
-		LoginPageObject LPO=new LoginPageObject(driver);
-		LPO.EnterUserID(username);
-		LPO.EnterUserPass(Passowrd);
-		LPO.ClickOnLoginButton();
-		String Actual_title=driver.getTitle();
-		String exp_title="Sales - Dashboard - Sales";
-		captureScreenShot(driver, "Login Page");
-
-		if(Exc.equals("Valid"))
-		{
-			if(exp_title.equals(Actual_title)) {
-				Assert.assertTrue(true);
-			}
-			else {
-				Assert.assertTrue(false);
-			}
-		}
-		else if(Exc.equals("Invalid"))
-		{
-			if(exp_title.equals(Actual_title))
-			{
-				LPO.logoutlink();
-				LPO.logoutbutton();
-				Assert.assertTrue(false);
-			}
-			else
-			{
-				Assert.assertTrue(true);
-			}
-		}
-
-	}
-
 
 	@Test(dataProvider = "LoginUserIDs")
 	public void Login_TestCase_SE(String username, String Passowrd,String Exc, String LoginType) { //initiate the driver
@@ -62,7 +26,7 @@ public class TC_AllLogin_001 extends BaseClasss {
 			Assert.assertEquals(driver.getTitle(), SalesTittle);
 		}
 	}
-	@Test (dataProvider = "LoginUserIDs")
+	//@Test (dataProvider = "LoginUserIDs")
 	public void Login_TestCase_Cashier(String username, String Passowrd,String Exc, String LoginType) { 
 		if(LoginType.equals("Cashier")) {
 			driver.get(SalesURL);
@@ -75,7 +39,7 @@ public class TC_AllLogin_001 extends BaseClasss {
 
 	}
 
-	@Test(dataProvider = "LoginUserIDs") 
+	//@Test(dataProvider = "LoginUserIDs") 
 	public void Login_TestCase_StoreHead(String username, String Passowrd,String Exc, String LoginType) { //initiate the driver
 		if(LoginType.equals("Store Head")) {
 			driver.get(SalesURL);

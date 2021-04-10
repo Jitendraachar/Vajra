@@ -36,26 +36,13 @@ public class BaseClasss {
 	public String envirnoment = readconfig.envirnoment();
 	public String Browser=readconfig.readBrowser();
 	public static WebDriver driver;
-	/*
-	 * public static String SEID="63"; public static String SEpass="pass123";
-	 * 
-	 * public static String OrderSectionID="17"; public static String
-	 * OrderSectionPass="pass123";
-	 * 
-	 * public static String CashierID="15"; public static String
-	 * CashierPass="pass123";
-	 * 
-	 * public static String StoreHeadID="11"; public static String
-	 * StoreHeadPass="pass123";
-	 * 
-	 * public static String OEID="110"; public static String OEPass="pass123";
-	 */	public static String SalesTittle="Sales - Dashboard - Sales";
+	public static String SalesTittle="Sales - Dashboard - Sales";
 	public static String OETittle="";
 	// to call different testing environment
 	public static String SalesURL;
 	public static String OEURL;
-	
-public static String OrderCustomerID="8";
+
+	public static String OrderCustomerID="8";
 	//public static String br;
 
 
@@ -65,6 +52,11 @@ public static String OrderCustomerID="8";
 	public void setup() { 
 		driverSetUp();
 		envSetUp();
+	}
+	@AfterClass
+	public void tierDown() throws InterruptedException {
+		Thread.sleep(2000);
+		driver.quit();
 	}
 
 	public void driverSetUp() {	
@@ -113,6 +105,6 @@ public static String OrderCustomerID="8";
 		//C:\Users\akash\git\Vajra\ScreenShots
 		FileUtils.copyFile(Src, Trgt);
 	}
-	
+
 }
-	
+

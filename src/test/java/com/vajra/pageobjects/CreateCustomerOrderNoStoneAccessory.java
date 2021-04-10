@@ -53,7 +53,7 @@ public class CreateCustomerOrderNoStoneAccessory {
 	public void  Actionelement(String ActionDropDown) {
 		for(WebElement ordertypes:Actionelement)
 		{
-			System.out.println(ordertypes.getText());
+		//	System.out.println(ordertypes.getText());
 			String neworder= ordertypes.getText();
 			if(neworder.contains(ActionDropDown)) {
 				Create_Order.click();
@@ -74,7 +74,7 @@ public class CreateCustomerOrderNoStoneAccessory {
 	}
 
 	public void clickOnNextButton() {
-
+		NextButton.click();
 	}
 
 }
