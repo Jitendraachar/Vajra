@@ -26,7 +26,7 @@ public class TC_AllLogin_001 extends BaseClasss {
 			Assert.assertEquals(driver.getTitle(), SalesTittle);
 		}
 	}
-	//@Test (dataProvider = "LoginUserIDs")
+	@Test (dataProvider = "LoginUserIDs")
 	public void Login_TestCase_Cashier(String username, String Passowrd,String Exc, String LoginType) { 
 		if(LoginType.equals("Cashier")) {
 			driver.get(SalesURL);
@@ -39,7 +39,7 @@ public class TC_AllLogin_001 extends BaseClasss {
 
 	}
 
-	//@Test(dataProvider = "LoginUserIDs") 
+	@Test(dataProvider = "LoginUserIDs") 
 	public void Login_TestCase_StoreHead(String username, String Passowrd,String Exc, String LoginType) { //initiate the driver
 		if(LoginType.equals("Store Head")) {
 			driver.get(SalesURL);
@@ -54,8 +54,7 @@ public class TC_AllLogin_001 extends BaseClasss {
 	@DataProvider(name="LoginUserIDs")
 	public String[][] getdata() throws IOException, InterruptedException{
 		String path=System.getProperty("user.dir")+"\\src\\test\\java\\com\\vajra\\TestData\\Usernameandpassword.xlsx";
-		//XLUtilities xlutil= new XLUtilities(path);
-
+	
 		int totalrows=XLUtilities.getRowCount(path,"Sale Login");
 		int totalcols=XLUtilities.getCellCount(path, "Sale Login", 1);
 
