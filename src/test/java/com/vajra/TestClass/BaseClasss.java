@@ -109,7 +109,8 @@ public static String OrderCustomerID="8";
 	{
 		TakesScreenshot ts=((TakesScreenshot)driver);
 		File Src=ts.getScreenshotAs(OutputType.FILE);
-		File Trgt=new File("C:\\Users\\jitendra.y\\workspace\\VajraV1\\ScreenShots"+tname+".png");
+		File Trgt=new File(System.getProperty("user.dir")+tname+".png");
+		//C:\Users\akash\git\Vajra\ScreenShots
 		FileUtils.copyFile(Src, Trgt);
 	}
 	
