@@ -6,80 +6,106 @@ import java.io.IOException;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
+import com.vajra.pageobjects.CreateCustomerOrderNoStoneAccessory;
+import com.vajra.pageobjects.CustomerSearch;
 import com.vajra.pageobjects.LoginPageObject;
 
 import junit.framework.Assert;
 import com.vajra.utilities.*;
 public class TC_AllLogin_001 extends BaseClasss {
-	
-	
-	@Test(dataProvider="loginDetails")
-	public void LoginSales(String User, String Password)throws InterruptedException,IOException
-	{
-		LoginPageObject lpo= new LoginPageObject(driver);
-		driver.get("http://192.168.1.10:2013/Sales/");
-		lpo.EnterUserID(User);
-		lpo.EnterUserPass(Password);
-		lpo.ClickOnLoginButton();
-		Assert.assertEquals(driver.getTitle(), SalesTittle);
-		captureScreenShot(driver, "loginsales");
-	}
-	@DataProvider(name ="loginDetails") 
-	public static Object[][] login()throws IOException {
-		String path=System.getProperty("user.dir")+"\\src\\test\\java\\com\\vajra\\TestData\\Usernameandpassword.xlsx";
-		int rownum=XLUtilities.getRowCount(path, "Sale Login");
-		int cocount=XLUtilities.getCellCount(path, "Sale Login", 1);
-		String logindata[][]=new String [rownum][cocount];
-		for(int i=1;i<=rownum;i++)
+
+	@Test(dataProvider="LoginUserIDs")
+	public void loginSales(String username, String Passowrd,String Exc, String LoginType)throws IOException,InterruptedException {
+		driver.get(SalesURL);
+		LoginPageObject LPO=new LoginPageObject(driver);
+		LPO.EnterUserID(username);
+		LPO.EnterUserPass(Passowrd);
+		LPO.ClickOnLoginButton();
+		String Actual_title=driver.getTitle();
+		String exp_title="Sales - Dashboard - Sales";
+		captureScreenShot(driver, "Login Page");
+
+		if(Exc.equals("Valid"))
 		{
-			for(int j=0;j<=cocount;j++)
-			{
-				logindata[i-1][j]=XLUtilities.getCellData( path,"Sale Login", i, j);
+			if(exp_title.equals(Actual_title)) {
+				Assert.assertTrue(true);
+			}
+			else {
+				Assert.assertTrue(false);
 			}
 		}
-		return logindata;
-		
+		else if(Exc.equals("Invalid"))
+		{
+			if(exp_title.equals(Actual_title))
+			{
+				LPO.logoutlink();
+				LPO.logoutbutton();
+				Assert.assertTrue(false);
+			}
+			else
+			{
+				Assert.assertTrue(true);
+			}
+		}
+
 	}
-	
-	/*
-	 * @Test(priority = 0) public void Login_TestCase_SE() { //initiate the driver
-	 * LoginPageObject lpo= new LoginPageObject(driver);
-	 * 
-	 * driver.get(SalesURL);
-	 * 
-	 * lpo.EnterUserID(SEID); lpo.EnterUserPass(SEpass); lpo.ClickOnLoginButton();
-	 * Assert.assertEquals(driver.getTitle(), SalesTittle); }
-	 * 
-	 * @Test(priority = 1) public void Login_TestCase_OrderSection() { //initiate
-	 * the driver LoginPageObject lpo= new LoginPageObject(driver);
-	 * driver.get(SalesURL);
-	 * 
-	 * lpo.EnterUserID(OrderSectionID); lpo.EnterUserPass(OrderSectionPass);
-	 * lpo.ClickOnLoginButton(); Assert.assertEquals(driver.getTitle(),
-	 * SalesTittle); }
-	 * 
-	 * @Test(priority = 2) public void Login_TestCase_Cashier() { //initiate the
-	 * driver LoginPageObject lpo= new LoginPageObject(driver);
-	 * 
-	 * driver.get(SalesURL);
-	 * 
-	 * lpo.EnterUserID(CashierID); lpo.EnterUserPass(CashierPass);
-	 * lpo.ClickOnLoginButton(); Assert.assertEquals(driver.getTitle(),
-	 * SalesTittle); }
-	 * 
-	 * @Test (priority = 3) public void Login_TestCase_StoreHead() { //initiate the
-	 * driver LoginPageObject lpo= new LoginPageObject(driver);
-	 * 
-	 * driver.get(SalesURL);
-	 * 
-	 * lpo.EnterUserID(StoreHeadID); lpo.EnterUserPass(StoreHeadPass);
-	 * lpo.ClickOnLoginButton(); Assert.assertEquals(driver.getTitle(),
-	 * SalesTittle); }
-	 * 
-	 * @Test(priority = 4) public void Login_TestCase_OE() { //initiate the driver
-	 * LoginPageObject lpo= new LoginPageObject(driver); driver.get(OEURL);
-	 * lpo.EnterUserID(OEID); lpo.EnterUserPass(OEPass); lpo.ClickOnLoginButton();
-	 * Assert.assertEquals(driver.getTitle(), OETittle); }
-	 */
+
+
+	@Test(dataProvider = "LoginUserIDs")
+	public void Login_TestCase_SE(String username, String Passowrd,String Exc, String LoginType) { //initiate the driver
+		if(LoginType.equals("SE")) {
+			driver.get(SalesURL);
+			LoginPageObject LPO=new LoginPageObject(driver);
+			LPO.EnterUserID(username);
+			LPO.EnterUserPass(Passowrd);
+			LPO.ClickOnLoginButton();
+			Assert.assertEquals(driver.getTitle(), SalesTittle);
+		}
+	}
+	@Test (dataProvider = "LoginUserIDs")
+	public void Login_TestCase_Cashier(String username, String Passowrd,String Exc, String LoginType) { 
+		if(LoginType.equals("Cashier")) {
+			driver.get(SalesURL);
+			LoginPageObject lpo= new LoginPageObject(driver);  
+			lpo.EnterUserID(username);
+			lpo.EnterUserPass(Passowrd);
+			lpo.ClickOnLoginButton(); 
+			Assert.assertEquals(driver.getTitle(),SalesTittle);
+		}
+
+	}
+
+	@Test(dataProvider = "LoginUserIDs") 
+	public void Login_TestCase_StoreHead(String username, String Passowrd,String Exc, String LoginType) { //initiate the driver
+		if(LoginType.equals("Store Head")) {
+			driver.get(SalesURL);
+			LoginPageObject lpo= new LoginPageObject(driver);
+			lpo.EnterUserID(username);
+			lpo.EnterUserPass(Passowrd);
+			lpo.ClickOnLoginButton();
+			Assert.assertEquals(driver.getTitle(), SalesTittle);
+		}
+	}
+
+	@DataProvider(name="LoginUserIDs")
+	public String[][] getdata() throws IOException, InterruptedException{
+		String path=System.getProperty("user.dir")+"\\src\\test\\java\\com\\vajra\\TestData\\Usernameandpassword.xlsx";
+		//XLUtilities xlutil= new XLUtilities(path);
+
+		int totalrows=XLUtilities.getRowCount(path,"Sale Login");
+		int totalcols=XLUtilities.getCellCount(path, "Sale Login", 1);
+
+		String logindata[][]= new String[totalrows][totalcols];
+
+		for(int i=1;i<=totalrows;i++)
+		{
+			for (int j=0;j<totalcols;j++)
+			{
+				logindata[i-1][j]=XLUtilities.getCellData(path,"Sale Login", i, j);			
+			}
+		}
+		return 	logindata;
+	}
+
 }
 
