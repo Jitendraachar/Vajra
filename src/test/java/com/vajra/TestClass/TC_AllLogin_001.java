@@ -6,8 +6,6 @@ import java.io.IOException;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-import com.vajra.pageobjects.CreateCustomerOrderNoStoneAccessory;
-import com.vajra.pageobjects.CustomerSearch;
 import com.vajra.pageobjects.LoginPageObject;
 
 import junit.framework.Assert;

@@ -43,8 +43,6 @@ public class BaseClasss {
 	public static String OEURL;
 
 	public static String OrderCustomerID="8";
-	//public static String br;
-
 
 	@BeforeClass
 
@@ -60,21 +58,14 @@ public class BaseClasss {
 	}
 
 	public void driverSetUp() {	
-		//br="chrome";
 		if(Browser.equals("Chrome")) {
-			//	Actions	action = new Actions(driver);
-			//	System.setProperty("webdriver.chrome.driver","C:\\Users\\shubh\\git\\Vajra\\Vajra\\Drivers\\chromedriver.exe");
 			System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"\\Drivers\\chromedriver.exe");
-
-			//		System.setProperty("webdriver.chrome.driver",readconfig.readChrompath());
 			driver = new ChromeDriver();
 
 			driver.manage().window().maximize();
 		}
 
 
-		// driver.manage().window().maximize();
-		//driver.manage().timeouts().implicitlyWait(1000, TimeUnit.SECONDS); } else
 		else if(Browser.equals("Firefox")) { 
 			System.setProperty("webdriver.gecko.driver",readconfig.readFirefoxpath());
 			FirefoxOptions options = new FirefoxOptions();
@@ -102,7 +93,6 @@ public class BaseClasss {
 		TakesScreenshot ts=((TakesScreenshot)driver);
 		File Src=ts.getScreenshotAs(OutputType.FILE);
 		File Trgt=new File(System.getProperty("user.dir")+tname+".png");
-		//C:\Users\akash\git\Vajra\ScreenShots
 		FileUtils.copyFile(Src, Trgt);
 	}
 
