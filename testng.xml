@@ -2,9 +2,9 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="vajra">
   <test name="Vajra">
-  <parameter name="browser" value="chrome"/>
+  <parameter name="browser" value="chrome"></parameter>
   <classes>
-  <class name="com.vajra.TestClass.TC_Customer_New_Order_N_S_A_"/>
+  <class name="com.vajra.TestClass.TC_RaiseSalesBill_FGStock_001"/>
   </classes>
   </test> 
 </suite> 

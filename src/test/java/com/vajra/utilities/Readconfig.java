@@ -4,9 +4,9 @@ import java.io.FileInputStream;
 import java.util.*;
 
 public class Readconfig {
-	
-	 Properties pro;
-	
+
+	Properties pro;
+
 	public Readconfig()
 	{
 		try {
@@ -20,29 +20,35 @@ public class Readconfig {
 			System.out.print("Exception is" +e.getMessage());
 		}
 	}
-	
-		public String readChrompath()
-		{
-			String Chropath= pro.getProperty("chromepath");
-			return Chropath;
-		}
-		public String readFirefoxpath()
-		{
-			String Firefoxpath=pro.getProperty("firefoxpath");
-			return Firefoxpath;
-		}
-	
-		public String readBrowser()
-		{
-			String Broswer=pro.getProperty("Browser");
-			return Broswer;
-		}
-		public String envirnoment()
-		{
-			String envirnoment=pro.getProperty("Environment");
-			return envirnoment;
-		}
-		
+
+	public String readChrompath()
+	{
+		String Chropath= pro.getProperty("chromepath");
+		return Chropath;
 	}
+	public String readFirefoxpath()
+	{
+		String Firefoxpath=pro.getProperty("firefoxpath");
+		return Firefoxpath;
+	}
+
+	public String readBrowser()
+	{
+		String Broswer=pro.getProperty("Browser");
+		return Broswer;
+	}
+	public String envirnoment()
+	{
+		String envirnoment=pro.getProperty("Environment");
+		return envirnoment;
+	}
+	public int timeOut() {
+		String waitSec=(pro.getProperty("TimeOutWaitSec"));
+		int WaitSecnew=	Integer.valueOf(waitSec);
+		System.err.println("Wait Sec: "+WaitSecnew);
+		return WaitSecnew;
+	}
+
+}
 
 

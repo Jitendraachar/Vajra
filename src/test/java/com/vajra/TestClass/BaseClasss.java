@@ -2,6 +2,8 @@ package com.vajra.TestClass;
 
 import java.io.File;
 import java.io.IOException;
+import java.io.ObjectInputFilter.Config;
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.io.FileUtils;
@@ -9,6 +11,7 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -17,12 +20,15 @@ import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.firefox.FirefoxProfile;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.CapabilityType;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
 
 import com.vajra.utilities.Readconfig;
+import com.vajra.utilities.XLUtilities;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -41,7 +47,6 @@ public class BaseClasss {
 	// to call different testing environment
 	public static String SalesURL;
 	public static String OEURL;
-
 	public static String OrderCustomerID="8";
 
 	@BeforeClass
@@ -53,7 +58,7 @@ public class BaseClasss {
 	}
 	@AfterClass
 	public void tierDown() throws InterruptedException {
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 		driver.quit();
 	}
 
@@ -95,6 +100,41 @@ public class BaseClasss {
 		File Trgt=new File(System.getProperty("user.dir")+tname+".png");
 		FileUtils.copyFile(Src, Trgt);
 	}
+	public void waitForElementNotVisible(List<WebElement> allZoneName) {
+		try {
+			if(isDisplayed((WebElement) allZoneName)) {
+				WebDriverWait webDriverWait = new WebDriverWait(driver, readconfig.timeOut());
+				webDriverWait.until(ExpectedConditions.invisibilityOf((WebElement) allZoneName));
+			}
+		}
+		catch (Exception ex) {
+			System.out.println(ex.toString());
+		}
+	}
+	
+	public void waitForElementNotClickable(WebElement allZoneName) {
+		try {
+			if(isDisplayed((WebElement) allZoneName)) {
+				WebDriverWait webDriverWait = new WebDriverWait(driver, readconfig.timeOut());
+				webDriverWait.until(ExpectedConditions.invisibilityOf((WebElement) allZoneName));
+			}
+		}
+		catch (Exception ex) {
+			System.out.println(ex.toString());
+		}
+	}
+	public boolean isDisplayed(WebElement element) {
+		try {
+			if(element.isDisplayed())
+				return true;
+		}catch (Exception e) {
+			// TODO: handle exception
+			return false;
+		}
+		return false;
+	}
+
 
 }
+
 
