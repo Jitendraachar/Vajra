@@ -1,6 +1,7 @@
 package com.vajra.TestClass;
 import java.io.IOException;
 
+import org.apache.logging.log4j.core.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.DataProvider;
@@ -17,6 +18,9 @@ public class TC_RaiseSalesBill_FGStock_001 extends BaseClasss{
 	}
 	@Test(priority = 1)
 	public void GetFGStockDetails() throws InterruptedException {
+		getLogger("TC_RaiseSalesBill_FGStock_001");
+		
+		logger.info("Akash");
 		FGStock fgs= new FGStock(driver);
 		fgs.ClickOnReportDropdown();
 		fgs.ClickOnStockDropDown();

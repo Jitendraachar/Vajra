@@ -7,6 +7,10 @@ import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.io.FileUtils;
+import org.apache.log4j.BasicConfigurator;
+import org.apache.log4j.LogManager;
+import org.apache.log4j.Logger;
+import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -33,6 +37,7 @@ import com.vajra.utilities.XLUtilities;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BaseClasss {
+	
 	// set driver
 
 	// to read the config file using java
@@ -48,7 +53,7 @@ public class BaseClasss {
 	public static String SalesURL;
 	public static String OEURL;
 	public static String OrderCustomerID="8";
-
+	public static Logger logger;
 	@BeforeClass
 
 
@@ -132,6 +137,12 @@ public class BaseClasss {
 			return false;
 		}
 		return false;
+	}
+	public Logger getLogger(String ClassName) {
+		logger=LogManager.getLogger(ClassName);
+		BasicConfigurator.configure();
+		PropertyConfigurator.configure("Configuration\\log4j2.properties");
+		return logger;
 	}
 
 
