@@ -47,7 +47,7 @@ public class TC_RaiseSalesBill_FGStock_001 extends BaseClasss{
 		fgs.SelectSegment("Gold");
 		fgs.ClickOnSearchButton();
 		fgs.getFgStockNo();
-		RaiseSaleBill();
+		//RaiseSaleBill();
 	}
 
 	@DataProvider(name="SELogin")
