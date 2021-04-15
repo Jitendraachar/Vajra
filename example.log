@@ -25,3 +25,10 @@ INFO main dummyone - Assert condition pass in info
 31   [main] INFO  dummyone  - We are in info if Conditions
 31   [main] INFO  dummyone  - Assert condition pass in info
 0    [main] INFO  TC_RaiseSalesBill_FGStock_001  - Akash
+0    [main] INFO  TC_RaiseSalesBill_FGStock_001  - Akash
+6    [main] INFO  TC_RaiseSalesBill_FGStock_001  - Sales SE login Successfully and GetFGStockDetails test Case is starting
+17   [main] INFO  TC_RaiseSalesBill_FGStock_001  - Object Created for FGStock PageObject Classes
+208  [main] INFO  TC_RaiseSalesBill_FGStock_001  - clicked on Report Menu Drop-Down
+357  [main] INFO  TC_RaiseSalesBill_FGStock_001  - clicked on Stock Sub-Menu Drop-Down
+545  [main] INFO  TC_RaiseSalesBill_FGStock_001  - clicked on FG Stock Sub-Menu Drop-Down
+3768 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Search filter Status DropDown is Selected as FG Stock
