@@ -48,6 +48,8 @@ public class TC_RaiseSalesBill_FGStock_001 extends BaseClasss{
 		fgs.ClickOnSearchButton();
 		fgs.getFgStockNo();
 		//RaiseSaleBill();
+				System.out.println("Delete this print 2;
+
 	}
 
 	@DataProvider(name="SELogin")
