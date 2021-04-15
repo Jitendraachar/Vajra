@@ -14,17 +14,28 @@ public class TC_RaiseSalesBill_FGStock_001 extends BaseClasss{
 
 	@Test(dataProvider = "SELogin",priority = 0)
 	public void SELogin(String UserName, String Pass, String Exp, String LoginType) {
+		getLogger("TC_RaiseSalesBill_FGStock_001");
 		login.Login_TestCase_SE(UserName, Pass, Exp, LoginType);		
 	}
 	@Test(priority = 1)
 	public void GetFGStockDetails() throws InterruptedException {
 		getLogger("TC_RaiseSalesBill_FGStock_001");
 		logger.info("Akash");
+
+		
+		
+		logger.info("Sales SE login Successfully and GetFGStockDetails test Case is starting");
+
 		FGStock fgs= new FGStock(driver);
+		logger.info("Object Created for FGStock PageObject Classes");
 		fgs.ClickOnReportDropdown();
+		logger.info("clicked on Report Menu Drop-Down");
 		fgs.ClickOnStockDropDown();
+		logger.info("clicked on Stock Sub-Menu Drop-Down");
 		fgs.ClickOnFGStockSubMenu();
+		logger.info("clicked on FG Stock Sub-Menu Drop-Down");
 		fgs.SelectStatusDropdown("Available");
+		logger.info("Search filter Status DropDown is Selected as FG Stock");
 		fgs.SelectStoreOrDCDropDown("Store");
 		waitForElementNotClickable(fgs.SelectStoreNameAsTSMadision);
 		fgs.SelectStoreOrDCNameDropDown("TS Madision");
