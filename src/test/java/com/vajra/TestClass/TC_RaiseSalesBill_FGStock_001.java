@@ -48,7 +48,12 @@ public class TC_RaiseSalesBill_FGStock_001 extends BaseClasss{
 		fgs.ClickOnSearchButton();
 		fgs.getFgStockNo();
 		//RaiseSaleBill();
+<<<<<<< HEAD
 		System.out.println("Delete this print 1");
+=======
+				System.out.println("Delete this print 2;
+
+>>>>>>> refs/remotes/origin/Branch_Akash
 	}
 
 	@DataProvider(name="SELogin")
