@@ -19,7 +19,6 @@ public class TC_RaiseSalesBill_FGStock_001 extends BaseClasss{
 	@Test(priority = 1)
 	public void GetFGStockDetails() throws InterruptedException {
 		getLogger("TC_RaiseSalesBill_FGStock_001");
-		
 		logger.info("Akash");
 		FGStock fgs= new FGStock(driver);
 		fgs.ClickOnReportDropdown();

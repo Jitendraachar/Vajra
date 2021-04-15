@@ -1,0 +1,27 @@
+
+INFO main dummyone - Properties file location is C:\Users\akash\git\Vajra\Configuration\log4j2.properties
+INFO main dummyone - We are in info
+FATAL main dummyone - We are in fatal
+DEBUG main dummyone - We are in debug
+INFO main dummyone - We are in info for Printed
+INFO main dummyone - Test Pass
+INFO main dummyone - We are in info if Conditions
+INFO main dummyone - Assert condition pass in info
+0    [main] INFO  dummyone  - Properties file location is C:\Users\akash\git\Vajra\Configuration\log4j2.properties
+7    [main] INFO  dummyone  - We are in info
+7    [main] FATAL dummyone  - We are in fatal
+8    [main] DEBUG dummyone  - We are in debug
+8    [main] INFO  dummyone  - We are in info for Printed
+9    [main] INFO  dummyone  - Test Pass
+9    [main] INFO  dummyone  - We are in info if Conditions
+13   [main] INFO  dummyone  - Assert condition pass in info
+0    [main] INFO  TC_RaiseSalesBill_FGStock_001  - Akash
+0    [main] INFO  dummyone  - Properties file location is C:\Users\akash\git\Vajra\Configuration\log4j2.properties
+15   [main] INFO  dummyone  - We are in info
+15   [main] FATAL dummyone  - We are in fatal
+15   [main] DEBUG dummyone  - We are in debug
+15   [main] INFO  dummyone  - We are in info for Printed
+31   [main] INFO  dummyone  - Test Pass
+31   [main] INFO  dummyone  - We are in info if Conditions
+31   [main] INFO  dummyone  - Assert condition pass in info
+0    [main] INFO  TC_RaiseSalesBill_FGStock_001  - Akash
