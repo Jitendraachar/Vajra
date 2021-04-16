@@ -31,19 +31,30 @@ public class TC_RaiseSalesBill_FGStock_001 extends BaseClasss{
 		fgs.ClickOnFGStockSubMenu();
 		logger.info("clicked on FG Stock Sub-Menu Drop-Down");
 		fgs.SelectStatusDropdown("Available");
-		logger.info("Search filter Status DropDown is Selected as FG Stock");
+		logger.info("Search filter Status DropDown is Selected as Available");
 		fgs.SelectStoreOrDCDropDown("Store");
+		logger.info("Search filter Store/DC Type DropDown is Selected as Store");
 		waitForElementNotClickable(fgs.SelectStoreNameAsTSMadision);
+		logger.info("Waited for Store/DC Name Drop Down");
+
 		fgs.SelectStoreOrDCNameDropDown("TS Madision");
+		logger.info("Search filter Store/DC Name DropDown is Selected as Available");
 		fgs.ClickOnZoneDropDown();
-		//	waitForElementNotVisible(fgs.AllZoneName);
+		logger.info("Clicked on Zone Dropdown");
 		fgs.getLoginZoneName();
+		logger.info("Getting SE login ID Zone and login Zone ID is "+fgs.ZoneName);
 		waitForElementNotClickable(fgs.SelectStoreNameAsTSMadision);
+		logger.info("Waiting for Store Name is Clickable");
 		fgs.SelectZoneDropDown(fgs.ZoneName);
+		logger.info("Zone Name DropDown has been Selected as "+fgs.ZoneName);
 		fgs.SelectSegment("Gold");
+		logger.info("Segment Drop-down has been Selected");
 		fgs.ClickOnSearchButton();
+		logger.info("Clicked on Search Button");
 		fgs.getFgStockNo();
+		logger.info("FG Stock Weight of "+fgs.FGStockNo+" is "+fgs.FgStockWt);
 		RaiseSaleBill();
+	
 	}
 
 	@DataProvider(name="SELogin")
@@ -51,11 +62,15 @@ public class TC_RaiseSalesBill_FGStock_001 extends BaseClasss{
 		return login.getdata();
 	}
 	public void RaiseSaleBill() {
+		logger.info("Raise Sale Bill Method has been Started");
 		CreateSaleBill csb=new CreateSaleBill(driver);
+		logger.info("Object has been created for CreateSaleBill page Object");
 		csb.ClickOnFunctionDropDown();
+		logger.info("Clicked On Function menu");
 		csb.ClickOnBillSubMenu();
+		logger.info("Clicked On Bill Sub Menu");
 		csb.ClickOnSaleBillSubMenu();
-		
+		logger.info("Clicked On Sale Bill Sub Menu");		
 		
 	}
 }

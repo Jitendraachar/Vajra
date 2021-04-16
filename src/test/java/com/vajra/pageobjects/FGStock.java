@@ -14,6 +14,8 @@ import org.openqa.selenium.support.ui.Select;
 public class FGStock {
 WebDriver driver;
 public String ZoneName;
+public static String FGStockNo;
+public static String FgStockWt;
 public FGStock(WebDriver rdriver) {
 	driver=rdriver;
 	PageFactory.initElements(rdriver, this);
@@ -139,9 +141,9 @@ public void getFgStockNo() throws InterruptedException {
 	actions.perform();
 	//driver.findElement(By.xpath("//thead/tr[1]/th[1]")).click();
 	Thread.sleep(2000);
-String FGStockNo=	driver.findElement(By.xpath("/html/body/div[2]/div/div/div/div/aside/div[3]/div[1]/table/tbody/tr[1]/td[13]")).getText();
-	System.out.println("Stock Number: "+FGStockNo);
-	String FgStockWt=driver.findElement(By.xpath("/html/body/div[2]/div/div/div/div/aside/div[3]/div[1]/table/tbody/tr[1]/td[16]")).getText();
-System.out.println("Stock Weight: "+FgStockWt);
+FGStockNo=	driver.findElement(By.xpath("/html/body/div[2]/div/div/div/div/aside/div[3]/div[1]/table/tbody/tr[1]/td[13]")).getText();
+	//System.out.println("Stock Number: "+FGStockNo);
+	 FgStockWt=driver.findElement(By.xpath("/html/body/div[2]/div/div/div/div/aside/div[3]/div[1]/table/tbody/tr[1]/td[16]")).getText();
+//System.out.println("Stock Weight: "+FgStockWt);
 }
 }

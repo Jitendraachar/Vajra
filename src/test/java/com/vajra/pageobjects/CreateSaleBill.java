@@ -12,10 +12,10 @@ public class CreateSaleBill {
 		PageFactory.initElements(rdriver, this);
 	}
 	
-	@FindBy(xpath = "//body/div[2]/nav[1]/div[1]/div[2]/ul[1]/li[3]/a[1]")
+	@FindBy(partialLinkText = "Functi")
 	WebElement FunctionDropDown;
 	
-	@FindBy(xpath = "//body/div[2]/nav[1]/div[1]/div[2]/ul[1]/li[3]/ul[1]/li[1]/a[1]")
+	@FindBy(linkText = "Bill")
 	WebElement BillSubMenu;
 	
 	@FindBy(partialLinkText = "Sales Bi")
@@ -23,12 +23,12 @@ public class CreateSaleBill {
 	
 	
 	public void ClickOnFunctionDropDown() {
-		BillSubMenu.isDisplayed();
-		BillSubMenu.click();
+		FunctionDropDown.isDisplayed();
+		FunctionDropDown.click();
 	}
 	public void ClickOnBillSubMenu() {
-		SaleBillSubMenu.isDisplayed();
-		SaleBillSubMenu.click();
+		BillSubMenu.isDisplayed();
+		BillSubMenu.click();
 	}
 	public void ClickOnSaleBillSubMenu() {
 		SaleBillSubMenu.isDisplayed();
