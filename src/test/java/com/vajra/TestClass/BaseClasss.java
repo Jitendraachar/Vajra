@@ -11,6 +11,7 @@ import org.apache.log4j.BasicConfigurator;
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -54,6 +55,7 @@ public class BaseClasss {
 	public static String OEURL;
 	public static String OrderCustomerID="8";
 	public static Logger logger;
+public static String AlertText;
 	@BeforeClass
 
 
@@ -117,11 +119,11 @@ public class BaseClasss {
 		}
 	}
 	
-	public void waitForElementNotClickable(WebElement allZoneName) {
+	public void waitForElementNotClickable(WebElement elementName) {
 		try {
-			if(isDisplayed((WebElement) allZoneName)) {
+			if(isDisplayed((WebElement) elementName)) {
 				WebDriverWait webDriverWait = new WebDriverWait(driver, readconfig.timeOut());
-				webDriverWait.until(ExpectedConditions.invisibilityOf((WebElement) allZoneName));
+				webDriverWait.until(ExpectedConditions.invisibilityOf((WebElement) elementName));
 			}
 		}
 		catch (Exception ex) {
@@ -143,6 +145,25 @@ public class BaseClasss {
 		BasicConfigurator.configure();
 		PropertyConfigurator.configure("Configuration\\log4j2.properties");
 		return logger;
+	}
+	
+	public static void handleAlert(String perform) {
+		Alert alert = driver.switchTo().alert();
+	if(perform.equals("Cancel")) {
+		driver.switchTo().alert().dismiss();			
+	}
+	else if(perform.equals("Accept")) {
+		driver.switchTo().alert().accept();
+	}
+	else if(perform.equals("Get Text")) {
+AlertText=	driver.switchTo().alert().getText();	
+	
+	}
+	else if(perform.equals("Send Text")) {
+		driver.switchTo().alert().sendKeys("Text");
+	}
+
+	
 	}
 
 
