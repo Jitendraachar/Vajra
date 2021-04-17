@@ -8,6 +8,7 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import com.vajra.pageobjects.CreateSaleBill;
+import com.vajra.pageobjects.FGStock;
 import com.vajra.TestClass.TC_FG_Stock_Report_001;
 public class TC_RaiseSalesBill_FGStock_001 extends BaseClasss{
 	TC_AllLogin_001 login=new TC_AllLogin_001();
@@ -17,60 +18,20 @@ public class TC_RaiseSalesBill_FGStock_001 extends BaseClasss{
 
 	@Test(dataProvider = "SELogin",priority = 0)
 	public void SELogin(String UserName, String Pass, String Exp, String LoginType) {
-		getLogger("TC_FG_Stock_Report_001");
 		login.Login_TestCase_SE(UserName, Pass, Exp, LoginType);		
-<<<<<<< HEAD
+
 	}
 	@Test(priority = 1)
 	public void GetFGStockDetails() throws InterruptedException {
 		getLogger("TC_RaiseSalesBill_FGStock_001");
 		logger.info("Akash");
-
-		
-		
+		TC_FG_Stock_Report_001 FGDetail=new TC_FG_Stock_Report_001();
+		FGDetail.GetFGStockDetails();
 		logger.info("Sales SE login Successfully and GetFGStockDetails test Case is starting");
-
-		FGStock fgs= new FGStock(driver);
-		logger.info("Object Created for FGStock PageObject Classes");
-		fgs.ClickOnReportDropdown();
-		logger.info("clicked on Report Menu Drop-Down");
-		fgs.ClickOnStockDropDown();
-		logger.info("clicked on Stock Sub-Menu Drop-Down");
-		fgs.ClickOnFGStockSubMenu();
-		logger.info("clicked on FG Stock Sub-Menu Drop-Down");
-		fgs.SelectStatusDropdown("Available");
-		logger.info("Search filter Status DropDown is Selected as FG Stock");
-		fgs.SelectStoreOrDCDropDown("Store");
-		waitForElementNotClickable(fgs.SelectStoreNameAsTSMadision);
-		fgs.SelectStoreOrDCNameDropDown("TS Madision");
-		fgs.ClickOnZoneDropDown();
-		//	waitForElementNotVisible(fgs.AllZoneName);
-		fgs.getLoginZoneName();
-		waitForElementNotClickable(fgs.SelectStoreNameAsTSMadision);
-		fgs.SelectZoneDropDown(fgs.ZoneName);
-		fgs.SelectSegment("Gold");
-		fgs.ClickOnSearchButton();
-		fgs.getFgStockNo();
-		//RaiseSaleBill();
-
-		System.out.println("Delete this print 1");
-//Added from Git
-				System.out.println("Delete this print 2");
-
-
 	}
-=======
->>>>>>> branch 'Branch_Akash' of https://github.com/Jitendraachar/Vajra
 
-	}	
-	@Test(priority = 1)
+	@Test(priority = 2)
 	private void RaiseSaleBillFGStock() throws InterruptedException {
-		//GetFGStockReport.GetFGStockDetails();
-		//FGStockNumber=TC_FG_Stock_Report_001.StockNo;
-		//FGStockWeight=TC_FG_Stock_Report_001.StockWt;
-		CreateSaleBillFG();
-	}
-	public void CreateSaleBillFG() throws InterruptedException {
 		logger.info("Raise Sale Bill Method has been Started");
 		CreateSaleBill csb=new CreateSaleBill(driver);
 		logger.info("Object has been created for CreateSaleBill page Object");
@@ -86,20 +47,15 @@ public class TC_RaiseSalesBill_FGStock_001 extends BaseClasss{
 		logger.info("Under Dropdown, Create Sale Bill Has been Selected");
 		csb.selectDocType();
 		logger.info("Showing selectDocType Dropdown");
-csb.selectFgStockUnderDocTypeDropDown();
-logger.info("Doc Type DropDown has been Selected as FG Stock");
+		csb.selectFgStockUnderDocTypeDropDown();
+		logger.info("Doc Type DropDown has been Selected as FG Stock");
 		csb.SearchCustomerBox();
 		logger.info("Sending Customer ID to Search Customer Bix");
 		csb.ClicksearchCustomerButton();
 		logger.info("Clicked on Search Customer");
-	 
-		    driver.switchTo().frame(0);
-			logger.info("Switched to Customer Search Form");
-				
-		
-		
-		
-	///	handleAlert("Select");
+		driver.switchTo().frame(1);
+		logger.info("Switched to Customer Search Form");
+		///	handleAlert("Select");
 		csb.SelectCustomerFromPopUp();
 		logger.info("Selected Customer from Search page of Customer");
 		csb.customerName();
