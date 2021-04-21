@@ -63,7 +63,7 @@ public static String AlertText;
 		driverSetUp();
 		envSetUp();
 	}
-	@AfterClass
+	//@AfterClass
 	public void tierDown() throws InterruptedException {
 		Thread.sleep(3000);
 		driver.quit();

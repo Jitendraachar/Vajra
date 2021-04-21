@@ -29,6 +29,8 @@ public class TC_RaiseSalesBill_FGStock_001 extends BaseClasss{
 		//Getting FG Stock Details from FG Stock Report
 		TC_FG_Stock_Report_001 FGDetail=new TC_FG_Stock_Report_001();
 		FGDetail.GetFGStockDetails();
+		FGStockNumber	=FGDetail.StockNo;
+		FGStockWeight=FGDetail.StockWt;
 		logger.info("Sales SE login Successfully and GetFGStockDetails test Case is starting");
 	}
 
@@ -52,22 +54,24 @@ public class TC_RaiseSalesBill_FGStock_001 extends BaseClasss{
 		csb.selectFgStockUnderDocTypeDropDown();
 		logger.info("Doc Type DropDown has been Selected as FG Stock");
 		csb.SearchCustomerBox();
-		logger.info("Sending Customer ID to Search Customer Bix");
+		logger.info("Sending Customer ID to Search Customer Box");
 		csb.ClicksearchCustomerButton();
 		logger.info("Clicked on Search Customer");
 		csb.SelectCustomerFromPopUp();
 		logger.info("Selected Customer from Search page of Customer");
 		csb.OkButtonForCustomerSearch();
 		logger.info("Clicked on Ok button from popup");
-        Thread.sleep(2000);
+        Thread.sleep(500);
 		csb.SaleBillCreatePageCustomerName();
 		csb.enterStockNumber(FGStockNumber);
 		logger.info("Entering FG Stock Number: "+FGStockNumber);
 		csb.EnterStockWt(FGStockWeight);
 		logger.info("Entering FG Stock Weight :"+FGStockWeight);
 		csb.ClickOnGetSaleBillGrid();
-		logger.info("Sale Create or Search DropDown has been Selected");
-
+		logger.info("Clicked on geting data arrow Button");
+		Thread.sleep(2000);
+csb.AnyExceptionAfterGettingData();
+logger.info("Checked for any exception");
 	}
 	@DataProvider(name="SELogin")
 	public String[][] GetSEData() throws IOException, InterruptedException {

@@ -11,6 +11,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
+import org.testng.Assert;
 
 public class CreateSaleBill {
 	WebDriver driver;
@@ -61,13 +62,13 @@ public class CreateSaleBill {
 	@FindBy(xpath = "/html/body/div[2]/div/div/div[2]/div/div/aside/div[3]/div/div[1]/div[3]/label/span")
 	WebElement SaleBillPageCustomerName;
 
-	@FindBy(xpath = "//body/div[3]/div[1]/div[1]/div[2]/div[1]/div[1]/aside[1]/div[3]/div[1]/div[1]/div[4]/div[1]/div[1]/input[1]")
+	@FindBy(xpath = "/html/body/div[2]/div/div/div[2]/div/div/aside/div[3]/div/div[1]/div[4]/div/div[1]/input")
 	WebElement StockNumberTextBox;
 
-	@FindBy(xpath = "//body/div[3]/div[1]/div[1]/div[2]/div[1]/div[1]/aside[1]/div[3]/div[1]/div[1]/div[4]/div[1]/div[2]/input[1]")
+	@FindBy(xpath = "/html/body/div[2]/div/div/div[2]/div/div/aside/div[3]/div/div[1]/div[4]/div/div[2]/input")
 	WebElement StockWeightTextBox;
 
-	@FindBy(xpath = "//body/div[3]/div[1]/div[1]/div[2]/div[1]/div[1]/aside[1]/div[3]/div[1]/div[1]/div[4]/div[1]/div[3]/button[1]/i[1]")
+	@FindBy(xpath = "/html/body/div[2]/div/div/div[2]/div/div/aside/div[3]/div/div[1]/div[4]/div/div[3]/button/i")
 	WebElement GetStockDataButton;
 
 	public void ClickOnGetSaleBillGrid() {
@@ -113,7 +114,7 @@ public class CreateSaleBill {
 	}
 
 	public void selectFgStockUnderDocTypeDropDown() throws InterruptedException {
-		Thread.sleep(2000);
+		Thread.sleep(500);
 		FgStockUnderDocTypeDropDown.isDisplayed();
 		FgStockUnderDocTypeDropDown.click();
 	}
@@ -130,7 +131,7 @@ public class CreateSaleBill {
 	}
 
 	public void SelectCustomerFromPopUp() throws InterruptedException {
-		Thread.sleep(200);
+		Thread.sleep(500);
 		// to Get Current Focus Window
 		driver.getWindowHandles();
 		SelectCustomerRadioButton.isDisplayed();
@@ -151,7 +152,7 @@ public class CreateSaleBill {
 		Thread.sleep(2000);
 		SaleBillPageCustomerName.isDisplayed();
 		String CreateSaleBillPageCustomerName = SaleBillPageCustomerName.getText();
-		System.out.println("-----------------------------------------CreateSaleBillPageCustomerName is " + CreateSaleBillPageCustomerName);
+		System.out.println("-----------------------------------------------------Create Sale Bill Page Customer Name is " + CreateSaleBillPageCustomerName);
 	}
 
 	public void enterStockNumber(String FgStockNo) {
@@ -162,11 +163,22 @@ public class CreateSaleBill {
 
 	public void EnterStockWt(String StockWt) {
 		StockWeightTextBox.isDisplayed();
-		StockWeightTextBox.sendKeys(StockWt);
+		StockWeightTextBox.sendKeys("12");
 	}
 
 	public void ClickOnArrowButton() {
 		GetStockDataButton.click();
+	}
+	@FindBy(xpath = "/html/body/div[5]/div/div/div/div[2]/p")
+	WebElement GettingDataException;
+
+	public void AnyExceptionAfterGettingData() {
+		
+		if(GettingDataException.isDisplayed()) {
+			String Exception =GettingDataException.getText();
+			System.out.println("                                    Got Error While fetching entered data :"+Exception);
+			Assert.assertTrue(false, Exception);
+		}
 	}
 
 }
