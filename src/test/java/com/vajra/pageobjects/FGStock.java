@@ -63,6 +63,9 @@ WebElement LoginZoneName;
 @FindBy(xpath ="/html/body/div[2]/div/div/div/div/aside/div[3]/div[1]" )
 WebElement SearchGrid;
 
+@FindBy(xpath = "//th[contains(text(),'LI.Sell. Price')]")
+WebElement FGSearchGrid;
+
 public void getLoginZoneName() {
 	 ZoneName= LoginZoneName.getText();
 	System.out.println("Zone Name is: "+ZoneName);
@@ -81,11 +84,11 @@ public void ClickOnFGStockSubMenu() {
 	FGStockSubMenu.isDisplayed();
 	FGStockSubMenu.click();
 }
-public void SelectStatusDropdown(String Status) throws InterruptedException {
+public void SelectStatusDropdown(String StatusFromTest) throws InterruptedException {
 	Thread.sleep(3000);
 	StatusDropDown.isDisplayed();
 Select StatusAllDropDown=new Select(StatusDropDown);
-StatusAllDropDown.selectByVisibleText(Status);
+StatusAllDropDown.selectByVisibleText(StatusFromTest);
 
 }
 public void SelectStoreOrDCDropDown(String StoreOrDC) {
@@ -129,8 +132,7 @@ public void SelectSegment(String Segment) {
 public void ClickOnSearchButton() {
 	SeachButton.click();
 }
-@FindBy(xpath = "//th[contains(text(),'LI.Sell. Price')]")
-WebElement FGSearchGrid;
+
 
 public void getFgStockNo() throws InterruptedException {
 	System.out.println("1");

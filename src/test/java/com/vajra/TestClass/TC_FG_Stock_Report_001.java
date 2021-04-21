@@ -18,13 +18,24 @@ public class TC_FG_Stock_Report_001 extends BaseClasss{
 		login.Login_TestCase_SE(UserName, Pass, Exp, LoginType);		
 	}
 
-	@DataProvider(name="SELogin")
-	public String[][] GetSEData() throws IOException, InterruptedException {
-		return login.getdata();
-	}
-	@Test(priority = 1)
 
-	public void GetFGStockDetails() throws InterruptedException {		
+	//@Test(priority = 1)
+	public void FGStockAvailabeGoldDetail() throws InterruptedException {
+		GetStockDetails("Available","Gold");
+
+	}
+	@Test(priority = 2)
+	public void FGStockAvailabeSilverDetail() throws InterruptedException {
+		GetStockDetails("Available","Silver");
+
+	}
+
+	@Test(priority = 3)
+	public void FGStockAvailabePlatinumDetail() throws InterruptedException {
+		GetStockDetails("Available","Platinum");
+
+	}	
+	public void GetStockDetails(String Status, String Segment) throws InterruptedException {		
 		logger.info("Sales SE login Successfully and GetFGStockDetails test Case is starting");
 		FGStock fgs= new FGStock(driver);
 
@@ -35,7 +46,7 @@ public class TC_FG_Stock_Report_001 extends BaseClasss{
 		logger.info("clicked on Stock Sub-Menu Drop-Down");
 		fgs.ClickOnFGStockSubMenu();
 		logger.info("clicked on FG Stock Sub-Menu Drop-Down");
-		fgs.SelectStatusDropdown("Available");
+		fgs.SelectStatusDropdown(Status);
 		logger.info("Search filter Status DropDown is Selected as Available");
 		fgs.SelectStoreOrDCDropDown("Store");
 		logger.info("Search filter Store/DC Type DropDown is Selected as Store");
@@ -52,7 +63,7 @@ public class TC_FG_Stock_Report_001 extends BaseClasss{
 		logger.info("Waiting for Store Name is Clickable");
 		fgs.SelectZoneDropDown(fgs.ZoneName);
 		logger.info("Zone Name DropDown has been Selected as "+fgs.ZoneName);
-		fgs.SelectSegment("Gold");
+		fgs.SelectSegment(Segment);
 		logger.info("Segment Drop-down has been Selected");
 		fgs.ClickOnSearchButton();
 		logger.info("Clicked on Search Button");
@@ -62,6 +73,10 @@ public class TC_FG_Stock_Report_001 extends BaseClasss{
 
 		logger.info("FG Stock number of "+StockNo+" Weight is "+StockWt);
 
+	}
+	@DataProvider(name="SELogin")
+	public String[][] GetSEData() throws IOException, InterruptedException {
+		return login.getdata();
 	}
 
 }

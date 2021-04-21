@@ -177,7 +177,7 @@ public class CreateSaleBill {
 		if(GettingDataException.isDisplayed()) {
 			String Exception =GettingDataException.getText();
 			System.out.println("                                    Got Error While fetching entered data :"+Exception);
-			Assert.assertTrue(false, Exception);
+			Assert.assertFalse(true, Exception);
 		}
 	}
 
