@@ -1,5 +1,8 @@
 package com.vajra.pageobjects;
 
+import java.util.Iterator;
+import java.util.Set;
+
 import javax.xml.xpath.XPath;
 
 import org.openqa.selenium.Alert;
@@ -11,10 +14,13 @@ import org.openqa.selenium.support.ui.Select;
 
 public class CreateSaleBill {
 	WebDriver driver;
+
 	public CreateSaleBill(WebDriver rdriver) {
-		driver=rdriver;
+		driver = rdriver;
 		PageFactory.initElements(rdriver, this);
 	}
+
+	public static String CustomerNameOnSearchCustomerPopUp;
 
 	@FindBy(partialLinkText = "Functi")
 	WebElement FunctionDropDown;
@@ -25,7 +31,7 @@ public class CreateSaleBill {
 	@FindBy(partialLinkText = "Sales Bi")
 	WebElement SaleBillSubMenu;
 
-	@FindBy(xpath="//body/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/aside[1]/div[2]/div[1]/div[1]/select[1]")
+	@FindBy(xpath = "//body/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/aside[1]/div[2]/div[1]/div[1]/select[1]")
 	WebElement CreateOrSearchSaleBillDropDown;
 
 	@FindBy(xpath = "//option[contains(text(),'Create Sales Bill')]")
@@ -33,31 +39,27 @@ public class CreateSaleBill {
 
 	@FindBy(xpath = "//body/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/aside[1]/div[2]/div[1]/div[2]/div[1]/div[1]/select[1]")
 	WebElement SelectDocTypeDropDown;
-	
-	@FindBy(xpath="//option[contains(text(),'FG Stock')]")
+
+	@FindBy(xpath = "//option[contains(text(),'FG Stock')]")
 	WebElement FgStockUnderDocTypeDropDown;
-	
+
 	@FindBy(xpath = "//body/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/aside[1]/div[3]/div[1]/div[1]/div[1]/input[1]")
 	WebElement SearchCustomerInputBox;
-
 
 	@FindBy(xpath = "//body/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/aside[1]/div[3]/div[1]/div[1]/div[2]/button[1]/i[1]")
 	WebElement SearchCustomerButton;
 
-
-	@FindBy(xpath = "custId-0")
+	@FindBy(xpath = "//input[@id='custId-0']")
 	WebElement SelectCustomerRadioButton;
 
 	@FindBy(xpath = "/html[1]/body[1]/div[7]/div[1]/div[1]/form[1]/div[2]/div[1]/div[1]/div[1]/table[1]/tbody[1]/tr[1]/td[3]")
 	WebElement CustomerName;
 
-
 	@FindBy(xpath = "//button[contains(text(),'OK')]")
 	WebElement OkButtonForCustomerSearch;
 
-	@FindBy(xpath = "//body/div[3]/div[1]/div[1]/div[2]/div[1]/div[1]/aside[1]/div[3]/div[1]/div[1]/div[3]/label[1]/span[1]")
+	@FindBy(xpath = "/html/body/div[2]/div/div/div[2]/div/div/aside/div[3]/div/div[1]/div[3]/label/span")
 	WebElement SaleBillPageCustomerName;
-
 
 	@FindBy(xpath = "//body/div[3]/div[1]/div[1]/div[2]/div[1]/div[1]/aside[1]/div[3]/div[1]/div[1]/div[4]/div[1]/div[1]/input[1]")
 	WebElement StockNumberTextBox;
@@ -69,81 +71,100 @@ public class CreateSaleBill {
 	WebElement GetStockDataButton;
 
 	public void ClickOnGetSaleBillGrid() {
-		GetStockDataButton.click();	
+		GetStockDataButton.click();
 	}
+
 	public void ClickOnFunctionDropDown() {
 		FunctionDropDown.isDisplayed();
 		FunctionDropDown.click();
 	}
+
 	public void ClickOnBillSubMenu() {
 		BillSubMenu.isDisplayed();
 		BillSubMenu.click();
 	}
+
 	public void ClickOnSaleBillSubMenu() {
 		SaleBillSubMenu.isDisplayed();
 		SaleBillSubMenu.click();
 	}
 
 	public void SelectCreatOrSearchSaleBillDropDown() throws InterruptedException {
-		//CreateOrSearchSaleBillDropDown.isEnabled();
+		// CreateOrSearchSaleBillDropDown.isEnabled();
 		Thread.sleep(200);
 		CreateOrSearchSaleBillDropDown.click();
-		//	Select CreateOrSearchType= new Select(CreateOrSearchSaleBillDropDown);
-		//	CreateOrSearchType.selectByVisibleText("Create Sales Bill");
+		// Select CreateOrSearchType= new Select(CreateOrSearchSaleBillDropDown);
+		// CreateOrSearchType.selectByVisibleText("Create Sales Bill");
 	}
-	public void SelectCreateSaleBill()  {
+
+	public void SelectCreateSaleBill() {
 		CreateSaleBillUnderDropDown.isDisplayed();
-		//Thread.sleep(300);
+		// Thread.sleep(300);
 		CreateSaleBillUnderDropDown.click();
 	}
-	public void selectDocType()  {
-	//	Thread.sleep(3000);
+
+	public void selectDocType() {
 		SelectDocTypeDropDown.isDisplayed();
 		SelectDocTypeDropDown.click();
 
-		//CreateSaleBillUnderDropDown.isSelected();
-		//Select DocTypeDropDown= new Select(SelectDocTypeDropDown);
-		//DocTypeDropDown.selectByVisibleText("FG Stock");
+		// CreateSaleBillUnderDropDown.isSelected();
+		// Select DocTypeDropDown= new Select(SelectDocTypeDropDown);
+		// DocTypeDropDown.selectByVisibleText("FG Stock");
 	}
-public void selectFgStockUnderDocTypeDropDown(){
-	FgStockUnderDocTypeDropDown.isDisplayed();
-	FgStockUnderDocTypeDropDown.click();
-}
+
+	public void selectFgStockUnderDocTypeDropDown() throws InterruptedException {
+		Thread.sleep(2000);
+		FgStockUnderDocTypeDropDown.isDisplayed();
+		FgStockUnderDocTypeDropDown.click();
+	}
+
 	public void SearchCustomerBox() {
 		SelectDocTypeDropDown.isSelected();
 		SearchCustomerInputBox.sendKeys("63");
 	}
+
 	public void ClicksearchCustomerButton() {
+
 		SearchCustomerInputBox.isDisplayed();
 		SearchCustomerButton.click();
 	}
-	public void SelectCustomerFromPopUp() {
+
+	public void SelectCustomerFromPopUp() throws InterruptedException {
+		Thread.sleep(200);
+		// to Get Current Focus Window
+		driver.getWindowHandles();
 		SelectCustomerRadioButton.isDisplayed();
 		SelectCustomerRadioButton.click();
 	}
+
 	public void customerName() {
-		String CustomerNameOnSearchCustomerPopUp=CustomerName.getText();
+		CustomerNameOnSearchCustomerPopUp = CustomerName.getText();
 		System.out.println(CustomerNameOnSearchCustomerPopUp);
 	}
 
 	public void OkButtonForCustomerSearch() {
-		System.out.println("OkButtonForCustomerSearch is "+OkButtonForCustomerSearch);
+		OkButtonForCustomerSearch.isDisplayed();
+		OkButtonForCustomerSearch.click();
+	}
 
-	}
-	public void SaleBillCreatePageCustomerName() {
+	public void SaleBillCreatePageCustomerName() throws InterruptedException {
+		Thread.sleep(2000);
 		SaleBillPageCustomerName.isDisplayed();
-		String CreateSaleBillPageCustomerName=SaleBillPageCustomerName.getText();
-		System.out.println("CreateSaleBillPageCustomerName is "+CreateSaleBillPageCustomerName);
+		String CreateSaleBillPageCustomerName = SaleBillPageCustomerName.getText();
+		System.out.println("-----------------------------------------CreateSaleBillPageCustomerName is " + CreateSaleBillPageCustomerName);
 	}
+
 	public void enterStockNumber(String FgStockNo) {
 		StockNumberTextBox.isDisplayed();
-		//	CharSequence[] FGStockumber=FgStockNo;
+		// CharSequence[] FGStockumber=FgStockNo;
 		StockNumberTextBox.sendKeys(FgStockNo);
 	}
+
 	public void EnterStockWt(String StockWt) {
 		StockWeightTextBox.isDisplayed();
-		StockWeightTextBox.sendKeys(StockWt);	
+		StockWeightTextBox.sendKeys(StockWt);
 	}
+
 	public void ClickOnArrowButton() {
 		GetStockDataButton.click();
 	}

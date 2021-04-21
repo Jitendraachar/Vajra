@@ -3,6 +3,7 @@ import java.io.IOException;
 import java.util.Iterator;
 import java.util.Set;
 
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -25,6 +26,7 @@ public class TC_RaiseSalesBill_FGStock_001 extends BaseClasss{
 	public void GetFGStockDetails() throws InterruptedException {
 		getLogger("TC_RaiseSalesBill_FGStock_001");
 		logger.info("Akash");
+		//Getting FG Stock Details from FG Stock Report
 		TC_FG_Stock_Report_001 FGDetail=new TC_FG_Stock_Report_001();
 		FGDetail.GetFGStockDetails();
 		logger.info("Sales SE login Successfully and GetFGStockDetails test Case is starting");
@@ -53,21 +55,16 @@ public class TC_RaiseSalesBill_FGStock_001 extends BaseClasss{
 		logger.info("Sending Customer ID to Search Customer Bix");
 		csb.ClicksearchCustomerButton();
 		logger.info("Clicked on Search Customer");
-		driver.switchTo().frame(1);
-		logger.info("Switched to Customer Search Form");
-		///	handleAlert("Select");
 		csb.SelectCustomerFromPopUp();
 		logger.info("Selected Customer from Search page of Customer");
-		csb.customerName();
-		logger.info("Sale Create or Search DropDown has been Selected");
 		csb.OkButtonForCustomerSearch();
-		logger.info("Sale Create or Search DropDown has been Selected");
+		logger.info("Clicked on Ok button from popup");
+        Thread.sleep(2000);
 		csb.SaleBillCreatePageCustomerName();
-		logger.info("Sale Create or Search DropDown has been Selected");
 		csb.enterStockNumber(FGStockNumber);
-		logger.info("Sale Create or Search DropDown has been Selected");
+		logger.info("Entering FG Stock Number: "+FGStockNumber);
 		csb.EnterStockWt(FGStockWeight);
-		logger.info("Sale Create or Search DropDown has been Selected");
+		logger.info("Entering FG Stock Weight :"+FGStockWeight);
 		csb.ClickOnGetSaleBillGrid();
 		logger.info("Sale Create or Search DropDown has been Selected");
 
