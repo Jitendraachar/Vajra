@@ -163,7 +163,7 @@ public class CreateSaleBill {
 
 	public void EnterStockWt(String StockWt) {
 		StockWeightTextBox.isDisplayed();
-		StockWeightTextBox.sendKeys("12");
+		StockWeightTextBox.sendKeys(StockWt);
 	}
 
 	public void ClickOnArrowButton() {

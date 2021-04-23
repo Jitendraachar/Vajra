@@ -35,6 +35,11 @@ public class TC_FG_Stock_Report_001 extends BaseClasss{
 		GetStockDetails("Available","Platinum");
 
 	}	
+	@Test(priority = 3)
+	public void FGStockAvailabeDiamondDetail() throws InterruptedException {
+		GetStockDetails("Available","Diamond");
+
+	}
 	public void GetStockDetails(String Status, String Segment) throws InterruptedException {		
 		logger.info("Sales SE login Successfully and GetFGStockDetails test Case is starting");
 		FGStock fgs= new FGStock(driver);
@@ -52,7 +57,6 @@ public class TC_FG_Stock_Report_001 extends BaseClasss{
 		logger.info("Search filter Store/DC Type DropDown is Selected as Store");
 		waitForElementNotClickable(fgs.SelectStoreNameAsTSMadision);
 		logger.info("Waited for Store/DC Name Drop Down");
-
 		fgs.SelectStoreOrDCNameDropDown("TS Madision");
 		logger.info("Search filter Store/DC Name DropDown is Selected as Available");
 		fgs.ClickOnZoneDropDown();
@@ -72,7 +76,6 @@ public class TC_FG_Stock_Report_001 extends BaseClasss{
 		StockWt=FGStock.FgStockWt;
 
 		logger.info("FG Stock number of "+StockNo+" Weight is "+StockWt);
-
 	}
 	@DataProvider(name="SELogin")
 	public String[][] GetSEData() throws IOException, InterruptedException {

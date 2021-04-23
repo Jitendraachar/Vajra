@@ -10,6 +10,7 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
+import org.testng.Assert;
 
 public class FGStock {
 WebDriver driver;
@@ -109,7 +110,7 @@ public void SelectStoreOrDCNameDropDown(String StoreorDCName) {
 	}
 	else {
 		System.out.println("Please Provide correct StoreorDCName in TestClass, "+StoreorDCName+" is not Valid Name");
-	//Assert.assertTrue(false);
+	Assert.assertTrue(false);
 	}
 	
 	
