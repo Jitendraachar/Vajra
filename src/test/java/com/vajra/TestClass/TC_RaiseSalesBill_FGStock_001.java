@@ -1,19 +1,10 @@
 package com.vajra.TestClass;
 
 import java.io.IOException;
-import java.util.Iterator;
-import java.util.Set;
-
-import org.apache.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-import org.openqa.selenium.Alert;
-import org.openqa.selenium.By;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import com.vajra.pageobjects.CreateSaleBill;
-import com.vajra.pageobjects.FGStock;
-import com.vajra.TestClass.TC_FG_Stock_Report_001;
 
 public class TC_RaiseSalesBill_FGStock_001 extends BaseClasss {
 	TC_AllLogin_001 login = new TC_AllLogin_001();
@@ -28,46 +19,43 @@ public class TC_RaiseSalesBill_FGStock_001 extends BaseClasss {
 	public void SELogin(String UserName, String Pass, String Exp, String LoginType) {
 		getLogger("TC_RaiseSalesBill_FGStock_001");
 		login.Login_TestCase_SE(UserName, Pass, Exp, LoginType);
-		logger.info("Sales SE login Successfully and GetFGStockDetails test Case is starting");
-	}
+		}
 
 	@Test(priority = 1)
 	public void RaiseSaleBillFGStockGold() throws InterruptedException {
+		logger.info("Sales SE login Successfully and GetFGStockDetails test Case is starting for Segment Gold");
 		GetFGStockReport.FGStockAvailabeGoldDetail();
 		FGStockNumber1 = TC_FG_Stock_Report_001.StockNo;
 		FGStockWeight1 = TC_FG_Stock_Report_001.StockWt;
-
+logger.info("Staring Raise Sale Bill for Gold Segment FG Stock");
 		RaiseSaleBillFGStock();
 	}
 
 	@Test(priority = 2)
 	public void RaiseSaleBillFGStockSilver() throws InterruptedException {
+		logger.info("Sales SE login Successfully and GetFGStockDetails test Case is starting for Segment Silver");
 		GetFGStockReport.FGStockAvailabeSilverDetail();
-		FGStockNumber1 = TC_FG_Stock_Report_001.StockNo;
-		FGStockWeight1 = TC_FG_Stock_Report_001.StockWt;
-		logger.info("Sales SE login Successfully and GetFGStockDetails test Case is starting");
+		logger.info("Staring Raise Sale Bill for Silver Segment FG Stock");
 		RaiseSaleBillFGStock();
 	}
 
 	@Test(priority = 3)
 	public void RaiseSaleBillFGStockPlatinum() throws InterruptedException {
+		logger.info("Sales SE login Successfully and GetFGStockDetails test Case is starting for Segment Platinum");
 		GetFGStockReport.FGStockAvailabePlatinumDetail();
-		FGStockNumber1 = TC_FG_Stock_Report_001.StockNo;
-		FGStockWeight1 = TC_FG_Stock_Report_001.StockWt;
-		logger.info("Sales SE login Successfully and GetFGStockDetails test Case is starting");
+		logger.info("Staring Raise Sale Bill for Platinum Segment FG Stock");
 		RaiseSaleBillFGStock();
 	}
 	@Test(priority = 4)
 	public void RaiseSaleBillFGStockDiamond() throws InterruptedException {
-		GetFGStockReport.FGStockAvailabeDiamondDetail();
-		logger.info("Sales SE login Successfully and GetFGStockDetails test Case is starting");
+		logger.info("Sales SE login Successfully and GetFGStockDetails test Case is starting for Segment Diamond");
+		GetFGStockReport.FGStockAvailabeDiamondDetail();	
+		logger.info("Staring Raise Sale Bill for Diamond Segment FG Stock");
 		RaiseSaleBillFGStock();
 	}
 	public void RaiseSaleBillFGStock() throws InterruptedException {
 		FGStockNumber1 = TC_FG_Stock_Report_001.StockNo;
 		FGStockWeight1 = TC_FG_Stock_Report_001.StockWt;
-		logger.info("FG Stock number of 2222222222222"+TC_FG_Stock_Report_001.StockNo+" Weight is "+TC_FG_Stock_Report_001.StockWt);
-
 		logger.info("Raise Sale Bill Method has been Started");
 		CreateSaleBill csb = new CreateSaleBill(driver);
 		logger.info("Object has been created for CreateSaleBill page Object");
@@ -96,9 +84,9 @@ public class TC_RaiseSalesBill_FGStock_001 extends BaseClasss {
 		Thread.sleep(500);
 		csb.SaleBillCreatePageCustomerName();
 		csb.enterStockNumber(FGStockNumber1);
-		logger.info("Entering FG Stock Number: " + FGStockNumber1);
+		logger.info("Entering FG Stock Number for Segment "+GetFGStockReport.Segmentl+" is " + FGStockNumber1);
 		csb.EnterStockWt(FGStockWeight1);
-		logger.info("Entering FG Stock Weight :" + FGStockWeight1);
+		logger.info("Entering FG Stock Number for Segment "+GetFGStockReport.Segmentl+" is " + FGStockWeight1);
 		csb.ClickOnGetSaleBillGrid();
 		logger.info("Clicked on geting data arrow Button");
 		Thread.sleep(2000);
