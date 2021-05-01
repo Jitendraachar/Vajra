@@ -41,7 +41,6 @@ public class TC_FG_Stock_Report_001 extends BaseClasss{
 	@Test(priority = 3)
 	public void FGStockAvailabeDiamondDetail() throws InterruptedException {
 		GetStockDetails("Available","Diamond");
-
 	}
 	public void GetStockDetails(String Status, String Segment) throws InterruptedException {		
 		logger.info("Sales SE login Successfully and GetFGStockDetails for Segment "+Segment+" test Case is starting");

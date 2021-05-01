@@ -1,0 +1,12 @@
+1    [main] INFO  TC_RaiseSalesBill_FGStock_001  - Sales SE login Successfully and GetFGStockDetails test Case is starting for Segment Gold
+9    [main] INFO  TC_RaiseSalesBill_FGStock_001  - Sales SE login Successfully and GetFGStockDetails for Segment Gold test Case is starting
+25   [main] INFO  TC_RaiseSalesBill_FGStock_001  - Object Created for FGStock PageObject Classes for Segment Gold
+98   [main] INFO  TC_RaiseSalesBill_FGStock_001  - Sales SE login Successfully and GetFGStockDetails test Case is starting for Segment Silver
+99   [main] INFO  TC_RaiseSalesBill_FGStock_001  - Sales SE login Successfully and GetFGStockDetails for Segment Silver test Case is starting
+100  [main] INFO  TC_RaiseSalesBill_FGStock_001  - Object Created for FGStock PageObject Classes for Segment Silver
+138  [main] INFO  TC_RaiseSalesBill_FGStock_001  - Sales SE login Successfully and GetFGStockDetails test Case is starting for Segment Platinum
+139  [main] INFO  TC_RaiseSalesBill_FGStock_001  - Sales SE login Successfully and GetFGStockDetails for Segment Platinum test Case is starting
+142  [main] INFO  TC_RaiseSalesBill_FGStock_001  - Object Created for FGStock PageObject Classes for Segment Platinum
+183  [main] INFO  TC_RaiseSalesBill_FGStock_001  - Sales SE login Successfully and GetFGStockDetails test Case is starting for Segment Diamond
+183  [main] INFO  TC_RaiseSalesBill_FGStock_001  - Sales SE login Successfully and GetFGStockDetails for Segment Diamond test Case is starting
+187  [main] INFO  TC_RaiseSalesBill_FGStock_001  - Object Created for FGStock PageObject Classes for Segment Diamond
