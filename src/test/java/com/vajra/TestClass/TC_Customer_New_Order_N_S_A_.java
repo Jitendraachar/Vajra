@@ -2,18 +2,12 @@ package com.vajra.TestClass;
 
 import java.io.IOException;
 
-import org.apache.xmlbeans.impl.xb.xsdschema.Public;
 import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebDriver;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import com.vajra.pageobjects.CreateCustomerOrderNoStoneAccessory;
 import com.vajra.pageobjects.CustomerSearch;
-import com.vajra.pageobjects.LoginPageObject;
-import com.vajra.utilities.XLUtilities;
-
-import junit.framework.Assert;
 
 public class TC_Customer_New_Order_N_S_A_ extends BaseClasss{
 	TC_AllLogin_001 Login=new TC_AllLogin_001();

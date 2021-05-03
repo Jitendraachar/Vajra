@@ -1,16 +1,9 @@
 package com.vajra.pageobjects;
 
-import java.util.Iterator;
-import java.util.Set;
-
-import javax.xml.xpath.XPath;
-
-import org.openqa.selenium.Alert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 
 public class CreateSaleBill {

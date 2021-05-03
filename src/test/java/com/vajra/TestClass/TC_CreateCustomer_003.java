@@ -1,7 +1,6 @@
 package com.vajra.TestClass;
 
 import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Test;
 
 import com.vajra.pageobjects.AddCustomerSales;
@@ -10,7 +9,7 @@ import com.vajra.pageobjects.CreateOrderPageObject;
 public class TC_CreateCustomer_003 extends BaseClasss {
 	@Test(priority = 1)
 	public void navigateToCustomerPage() {
-		TC_AllLogin_001 tc= new TC_AllLogin_001();
+		//TC_AllLogin_001 tc= new TC_AllLogin_001();
 		//tc.Login_TestCase_SE();
 		CreateOrderPageObject cop= new CreateOrderPageObject(driver);
 		cop.ClickOnHomeCreateDocument();

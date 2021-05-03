@@ -10,3 +10,299 @@
 183  [main] INFO  TC_RaiseSalesBill_FGStock_001  - Sales SE login Successfully and GetFGStockDetails test Case is starting for Segment Diamond
 183  [main] INFO  TC_RaiseSalesBill_FGStock_001  - Sales SE login Successfully and GetFGStockDetails for Segment Diamond test Case is starting
 187  [main] INFO  TC_RaiseSalesBill_FGStock_001  - Object Created for FGStock PageObject Classes for Segment Diamond
+0    [main] INFO  TC_RaiseSalesBill_FGStock_001  - Sales SE login Successfully and GetFGStockDetails test Case is starting for Segment Gold
+6    [main] INFO  TC_RaiseSalesBill_FGStock_001  - Sales SE login Successfully and GetFGStockDetails for Segment Gold test Case is starting
+47   [main] INFO  TC_RaiseSalesBill_FGStock_001  - Object Created for FGStock PageObject Classes for Segment Gold
+91   [main] INFO  TC_RaiseSalesBill_FGStock_001  - Sales SE login Successfully and GetFGStockDetails test Case is starting for Segment Silver
+92   [main] INFO  TC_RaiseSalesBill_FGStock_001  - Sales SE login Successfully and GetFGStockDetails for Segment Silver test Case is starting
+93   [main] INFO  TC_RaiseSalesBill_FGStock_001  - Object Created for FGStock PageObject Classes for Segment Silver
+114  [main] INFO  TC_RaiseSalesBill_FGStock_001  - Sales SE login Successfully and GetFGStockDetails test Case is starting for Segment Platinum
+114  [main] INFO  TC_RaiseSalesBill_FGStock_001  - Sales SE login Successfully and GetFGStockDetails for Segment Platinum test Case is starting
+115  [main] INFO  TC_RaiseSalesBill_FGStock_001  - Object Created for FGStock PageObject Classes for Segment Platinum
+136  [main] INFO  TC_RaiseSalesBill_FGStock_001  - Sales SE login Successfully and GetFGStockDetails test Case is starting for Segment Diamond
+136  [main] INFO  TC_RaiseSalesBill_FGStock_001  - Sales SE login Successfully and GetFGStockDetails for Segment Diamond test Case is starting
+137  [main] INFO  TC_RaiseSalesBill_FGStock_001  - Object Created for FGStock PageObject Classes for Segment Diamond
+0    [main] INFO  TC_RaiseSalesBill_FGStock_001  - Sales SE login Successfully and GetFGStockDetails test Case is starting for Segment Gold
+8    [main] INFO  TC_RaiseSalesBill_FGStock_001  - Sales SE login Successfully and GetFGStockDetails for Segment Gold test Case is starting
+23   [main] INFO  TC_RaiseSalesBill_FGStock_001  - Object Created for FGStock PageObject Classes for Segment Gold
+68   [main] INFO  TC_RaiseSalesBill_FGStock_001  - Sales SE login Successfully and GetFGStockDetails test Case is starting for Segment Silver
+69   [main] INFO  TC_RaiseSalesBill_FGStock_001  - Sales SE login Successfully and GetFGStockDetails for Segment Silver test Case is starting
+70   [main] INFO  TC_RaiseSalesBill_FGStock_001  - Object Created for FGStock PageObject Classes for Segment Silver
+93   [main] INFO  TC_RaiseSalesBill_FGStock_001  - Sales SE login Successfully and GetFGStockDetails test Case is starting for Segment Platinum
+93   [main] INFO  TC_RaiseSalesBill_FGStock_001  - Sales SE login Successfully and GetFGStockDetails for Segment Platinum test Case is starting
+95   [main] INFO  TC_RaiseSalesBill_FGStock_001  - Object Created for FGStock PageObject Classes for Segment Platinum
+116  [main] INFO  TC_RaiseSalesBill_FGStock_001  - Sales SE login Successfully and GetFGStockDetails test Case is starting for Segment Diamond
+116  [main] INFO  TC_RaiseSalesBill_FGStock_001  - Sales SE login Successfully and GetFGStockDetails for Segment Diamond test Case is starting
+117  [main] INFO  TC_RaiseSalesBill_FGStock_001  - Object Created for FGStock PageObject Classes for Segment Diamond
+0    [main] INFO  TC_RaiseSalesBill_FGStock_001  - Sales SE login Successfully and GetFGStockDetails test Case is starting for Segment Gold
+4    [main] INFO  TC_RaiseSalesBill_FGStock_001  - Sales SE login Successfully and GetFGStockDetails for Segment Gold test Case is starting
+18   [main] INFO  TC_RaiseSalesBill_FGStock_001  - Object Created for FGStock PageObject Classes for Segment Gold
+76   [main] INFO  TC_RaiseSalesBill_FGStock_001  - Sales SE login Successfully and GetFGStockDetails test Case is starting for Segment Silver
+77   [main] INFO  TC_RaiseSalesBill_FGStock_001  - Sales SE login Successfully and GetFGStockDetails for Segment Silver test Case is starting
+78   [main] INFO  TC_RaiseSalesBill_FGStock_001  - Object Created for FGStock PageObject Classes for Segment Silver
+101  [main] INFO  TC_RaiseSalesBill_FGStock_001  - Sales SE login Successfully and GetFGStockDetails test Case is starting for Segment Platinum
+101  [main] INFO  TC_RaiseSalesBill_FGStock_001  - Sales SE login Successfully and GetFGStockDetails for Segment Platinum test Case is starting
+102  [main] INFO  TC_RaiseSalesBill_FGStock_001  - Object Created for FGStock PageObject Classes for Segment Platinum
+126  [main] INFO  TC_RaiseSalesBill_FGStock_001  - Sales SE login Successfully and GetFGStockDetails test Case is starting for Segment Diamond
+126  [main] INFO  TC_RaiseSalesBill_FGStock_001  - Sales SE login Successfully and GetFGStockDetails for Segment Diamond test Case is starting
+128  [main] INFO  TC_RaiseSalesBill_FGStock_001  - Object Created for FGStock PageObject Classes for Segment Diamond
+0    [main] INFO  TC_RaiseSalesBill_FGStock_001  - Sales SE login Successfully and GetFGStockDetails test Case is starting for Segment Gold
+7    [main] INFO  TC_RaiseSalesBill_FGStock_001  - Sales SE login Successfully and GetFGStockDetails for Segment Gold test Case is starting
+19   [main] INFO  TC_RaiseSalesBill_FGStock_001  - Object Created for FGStock PageObject Classes for Segment Gold
+207  [main] INFO  TC_RaiseSalesBill_FGStock_001  - clicked on Report Menu Drop-Down
+354  [main] INFO  TC_RaiseSalesBill_FGStock_001  - clicked on Stock Sub-Menu Drop-Down
+526  [main] INFO  TC_RaiseSalesBill_FGStock_001  - clicked on FG Stock Sub-Menu Drop-Down
+3787 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Search filter Status DropDown is Selected as Available
+3988 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Search filter Store/DC Type DropDown is Selected as Store
+4027 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Waited for Store/DC Name Drop Down
+4317 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Search filter Store/DC Name DropDown is Selected as TS Madision
+4467 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Clicked on Zone Dropdown
+4520 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Getting SE login ID Zone and login Zone ID is Diamond-Bangle Pair-Zone
+4536 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Waiting for Store Name is Clickable
+6641 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Zone Name DropDown has been Selected as Diamond-Bangle Pair-Zone
+6887 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Segment Drop-down has been Selected asGold
+7034 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Clicked on Search Button to get Status Available and Segment Gold
+10023 [main] INFO  TC_RaiseSalesBill_FGStock_001  - 1st record Stock Number from FG Stock report for Status Available and Segment Gold is 445 and Stock Weight is 100.000
+10023 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Staring Raise Sale Bill for Gold Segment FG Stock
+10024 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Raise Sale Bill Method has been Started
+10030 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Object has been created for CreateSaleBill page Object
+10180 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Clicked On Function menu
+10331 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Clicked On Bill Sub Menu
+10523 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Clicked On Sale Bill Sub Menu
+10877 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Sale Create or Search DropDown has been Selected
+11092 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Under Dropdown, Create Sale Bill Has been Selected
+11314 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Showing selectDocType Dropdown
+11947 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Doc Type DropDown has been Selected as FG Stock
+12123 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Sending Customer ID to Search Customer Box
+12283 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Clicked on Search Customer
+13541 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Selected Customer from Search page of Customer
+13688 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Clicked on Ok button from popup
+16456 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Entering FG Stock Number for Segment Gold is 445
+16633 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Entering FG Stock Number for Segment Gold is 100.000
+16734 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Clicked on geting data arrow Button
+18841 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Sales SE login Successfully and GetFGStockDetails test Case is starting for Segment Silver
+18841 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Sales SE login Successfully and GetFGStockDetails for Segment Silver test Case is starting
+18843 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Object Created for FGStock PageObject Classes for Segment Silver
+19004 [main] INFO  TC_RaiseSalesBill_FGStock_001  - clicked on Report Menu Drop-Down
+19175 [main] INFO  TC_RaiseSalesBill_FGStock_001  - clicked on Stock Sub-Menu Drop-Down
+19376 [main] INFO  TC_RaiseSalesBill_FGStock_001  - clicked on FG Stock Sub-Menu Drop-Down
+22542 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Search filter Status DropDown is Selected as Available
+22731 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Search filter Store/DC Type DropDown is Selected as Store
+22748 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Waited for Store/DC Name Drop Down
+23016 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Search filter Store/DC Name DropDown is Selected as TS Madision
+23178 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Clicked on Zone Dropdown
+23250 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Getting SE login ID Zone and login Zone ID is Diamond-Bangle Pair-Zone
+23264 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Waiting for Store Name is Clickable
+25372 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Zone Name DropDown has been Selected as Diamond-Bangle Pair-Zone
+25609 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Segment Drop-down has been Selected asSilver
+25762 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Clicked on Search Button to get Status Available and Segment Silver
+28649 [main] INFO  TC_RaiseSalesBill_FGStock_001  - 1st record Stock Number from FG Stock report for Status Available and Segment Silver is 2000 and Stock Weight is 462.000
+28650 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Staring Raise Sale Bill for Silver Segment FG Stock
+28650 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Raise Sale Bill Method has been Started
+28651 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Object has been created for CreateSaleBill page Object
+28788 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Clicked On Function menu
+28936 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Clicked On Bill Sub Menu
+29096 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Clicked On Sale Bill Sub Menu
+29422 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Sale Create or Search DropDown has been Selected
+29624 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Under Dropdown, Create Sale Bill Has been Selected
+29798 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Showing selectDocType Dropdown
+30419 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Doc Type DropDown has been Selected as FG Stock
+30616 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Sending Customer ID to Search Customer Box
+30744 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Clicked on Search Customer
+31427 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Selected Customer from Search page of Customer
+31566 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Clicked on Ok button from popup
+34312 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Entering FG Stock Number for Segment Silver is 2000
+34481 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Entering FG Stock Number for Segment Silver is 462.000
+34584 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Clicked on geting data arrow Button
+36613 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Sales SE login Successfully and GetFGStockDetails test Case is starting for Segment Platinum
+36613 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Sales SE login Successfully and GetFGStockDetails for Segment Platinum test Case is starting
+36615 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Object Created for FGStock PageObject Classes for Segment Platinum
+36767 [main] INFO  TC_RaiseSalesBill_FGStock_001  - clicked on Report Menu Drop-Down
+36948 [main] INFO  TC_RaiseSalesBill_FGStock_001  - clicked on Stock Sub-Menu Drop-Down
+37138 [main] INFO  TC_RaiseSalesBill_FGStock_001  - clicked on FG Stock Sub-Menu Drop-Down
+40312 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Search filter Status DropDown is Selected as Available
+40462 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Search filter Store/DC Type DropDown is Selected as Store
+40475 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Waited for Store/DC Name Drop Down
+40679 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Search filter Store/DC Name DropDown is Selected as TS Madision
+40804 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Clicked on Zone Dropdown
+40832 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Getting SE login ID Zone and login Zone ID is Diamond-Bangle Pair-Zone
+40845 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Waiting for Store Name is Clickable
+42945 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Zone Name DropDown has been Selected as Diamond-Bangle Pair-Zone
+43159 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Segment Drop-down has been Selected asPlatinum
+43300 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Clicked on Search Button to get Status Available and Segment Platinum
+46167 [main] INFO  TC_RaiseSalesBill_FGStock_001  - 1st record Stock Number from FG Stock report for Status Available and Segment Platinum is 1995 and Stock Weight is 21.520
+46168 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Staring Raise Sale Bill for Platinum Segment FG Stock
+46168 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Raise Sale Bill Method has been Started
+46169 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Object has been created for CreateSaleBill page Object
+46277 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Clicked On Function menu
+46381 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Clicked On Bill Sub Menu
+46514 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Clicked On Sale Bill Sub Menu
+46834 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Sale Create or Search DropDown has been Selected
+47024 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Under Dropdown, Create Sale Bill Has been Selected
+47183 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Showing selectDocType Dropdown
+47798 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Doc Type DropDown has been Selected as FG Stock
+47960 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Sending Customer ID to Search Customer Box
+48122 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Clicked on Search Customer
+48823 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Selected Customer from Search page of Customer
+48963 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Clicked on Ok button from popup
+51707 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Entering FG Stock Number for Segment Platinum is 1995
+51890 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Entering FG Stock Number for Segment Platinum is 21.520
+51982 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Clicked on geting data arrow Button
+54015 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Sales SE login Successfully and GetFGStockDetails test Case is starting for Segment Diamond
+54016 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Sales SE login Successfully and GetFGStockDetails for Segment Diamond test Case is starting
+54017 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Object Created for FGStock PageObject Classes for Segment Diamond
+54155 [main] INFO  TC_RaiseSalesBill_FGStock_001  - clicked on Report Menu Drop-Down
+54287 [main] INFO  TC_RaiseSalesBill_FGStock_001  - clicked on Stock Sub-Menu Drop-Down
+54442 [main] INFO  TC_RaiseSalesBill_FGStock_001  - clicked on FG Stock Sub-Menu Drop-Down
+57633 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Search filter Status DropDown is Selected as Available
+57815 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Search filter Store/DC Type DropDown is Selected as Store
+57830 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Waited for Store/DC Name Drop Down
+0    [main] INFO  TC_RaiseSalesBill_FGStock_001  - Sales SE login Successfully and GetFGStockDetails test Case is starting for Segment Gold
+5    [main] INFO  TC_RaiseSalesBill_FGStock_001  - Sales SE login Successfully and GetFGStockDetails for Segment Gold test Case is starting
+18   [main] INFO  TC_RaiseSalesBill_FGStock_001  - Object Created for FGStock PageObject Classes for Segment Gold
+242  [main] INFO  TC_RaiseSalesBill_FGStock_001  - clicked on Report Menu Drop-Down
+395  [main] INFO  TC_RaiseSalesBill_FGStock_001  - clicked on Stock Sub-Menu Drop-Down
+537  [main] INFO  TC_RaiseSalesBill_FGStock_001  - clicked on FG Stock Sub-Menu Drop-Down
+3777 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Search filter Status DropDown is Selected as Available
+3981 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Search filter Store/DC Type DropDown is Selected as Store
+4019 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Waited for Store/DC Name Drop Down
+4335 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Search filter Store/DC Name DropDown is Selected as TS Madision
+4527 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Clicked on Zone Dropdown
+4575 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Getting SE login ID Zone and login Zone ID is Diamond-Bangle Pair-Zone
+4590 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Waiting for Store Name is Clickable
+6702 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Zone Name DropDown has been Selected as Diamond-Bangle Pair-Zone
+7034 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Segment Drop-down has been Selected asGold
+7153 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Clicked on Search Button to get Status Available and Segment Gold
+10093 [main] INFO  TC_RaiseSalesBill_FGStock_001  - 1st record Stock Number from FG Stock report for Status Available and Segment Gold is 445 and Stock Weight is 100.000
+10093 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Staring Raise Sale Bill for Gold Segment FG Stock
+10094 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Raise Sale Bill Method has been Started
+10100 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Object has been created for CreateSaleBill page Object
+10253 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Clicked On Function menu
+10403 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Clicked On Bill Sub Menu
+10585 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Clicked On Sale Bill Sub Menu
+10926 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Sale Create or Search DropDown has been Selected
+11203 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Under Dropdown, Create Sale Bill Has been Selected
+11384 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Showing selectDocType Dropdown
+12032 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Doc Type DropDown has been Selected as FG Stock
+12200 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Sending Customer ID to Search Customer Box
+12318 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Clicked on Search Customer
+13015 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Selected Customer from Search page of Customer
+13190 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Clicked on Ok button from popup
+15996 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Entering FG Stock Number for Segment Gold is 445
+16192 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Entering FG Stock Number for Segment Gold is 100.000
+16299 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Clicked on geting data arrow Button
+18401 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Sales SE login Successfully and GetFGStockDetails test Case is starting for Segment Silver
+18401 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Sales SE login Successfully and GetFGStockDetails for Segment Silver test Case is starting
+18403 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Object Created for FGStock PageObject Classes for Segment Silver
+18588 [main] INFO  TC_RaiseSalesBill_FGStock_001  - clicked on Report Menu Drop-Down
+18732 [main] INFO  TC_RaiseSalesBill_FGStock_001  - clicked on Stock Sub-Menu Drop-Down
+18934 [main] INFO  TC_RaiseSalesBill_FGStock_001  - clicked on FG Stock Sub-Menu Drop-Down
+22157 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Search filter Status DropDown is Selected as Available
+22365 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Search filter Store/DC Type DropDown is Selected as Store
+22384 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Waited for Store/DC Name Drop Down
+22527 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Sales SE login Successfully and GetFGStockDetails test Case is starting for Segment Platinum
+22528 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Sales SE login Successfully and GetFGStockDetails for Segment Platinum test Case is starting
+22529 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Object Created for FGStock PageObject Classes for Segment Platinum
+22634 [main] INFO  TC_RaiseSalesBill_FGStock_001  - clicked on Report Menu Drop-Down
+22764 [main] INFO  TC_RaiseSalesBill_FGStock_001  - clicked on Stock Sub-Menu Drop-Down
+22898 [main] INFO  TC_RaiseSalesBill_FGStock_001  - clicked on FG Stock Sub-Menu Drop-Down
+26037 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Search filter Status DropDown is Selected as Available
+26139 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Search filter Store/DC Type DropDown is Selected as Store
+26155 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Waited for Store/DC Name Drop Down
+26426 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Search filter Store/DC Name DropDown is Selected as TS Madision
+26599 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Clicked on Zone Dropdown
+26644 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Getting SE login ID Zone and login Zone ID is Diamond-Bangle Pair-Zone
+26662 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Waiting for Store Name is Clickable
+28792 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Zone Name DropDown has been Selected as Diamond-Bangle Pair-Zone
+28999 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Segment Drop-down has been Selected asPlatinum
+29158 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Clicked on Search Button to get Status Available and Segment Platinum
+32059 [main] INFO  TC_RaiseSalesBill_FGStock_001  - 1st record Stock Number from FG Stock report for Status Available and Segment Platinum is 1995 and Stock Weight is 21.520
+32060 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Staring Raise Sale Bill for Platinum Segment FG Stock
+32060 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Raise Sale Bill Method has been Started
+32061 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Object has been created for CreateSaleBill page Object
+32206 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Clicked On Function menu
+32345 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Clicked On Bill Sub Menu
+32514 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Clicked On Sale Bill Sub Menu
+32858 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Sale Create or Search DropDown has been Selected
+33067 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Under Dropdown, Create Sale Bill Has been Selected
+33236 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Showing selectDocType Dropdown
+33869 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Doc Type DropDown has been Selected as FG Stock
+34035 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Sending Customer ID to Search Customer Box
+34182 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Clicked on Search Customer
+34876 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Selected Customer from Search page of Customer
+35032 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Clicked on Ok button from popup
+37805 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Entering FG Stock Number for Segment Platinum is 1995
+38021 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Entering FG Stock Number for Segment Platinum is 21.520
+38124 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Clicked on geting data arrow Button
+40166 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Sales SE login Successfully and GetFGStockDetails test Case is starting for Segment Diamond
+40166 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Sales SE login Successfully and GetFGStockDetails for Segment Diamond test Case is starting
+40174 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Object Created for FGStock PageObject Classes for Segment Diamond
+40342 [main] INFO  TC_RaiseSalesBill_FGStock_001  - clicked on Report Menu Drop-Down
+40462 [main] INFO  TC_RaiseSalesBill_FGStock_001  - clicked on Stock Sub-Menu Drop-Down
+40615 [main] INFO  TC_RaiseSalesBill_FGStock_001  - clicked on FG Stock Sub-Menu Drop-Down
+43830 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Search filter Status DropDown is Selected as Available
+44030 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Search filter Store/DC Type DropDown is Selected as Store
+44056 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Waited for Store/DC Name Drop Down
+44341 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Search filter Store/DC Name DropDown is Selected as TS Madision
+44549 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Clicked on Zone Dropdown
+44596 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Getting SE login ID Zone and login Zone ID is Diamond-Bangle Pair-Zone
+44615 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Waiting for Store Name is Clickable
+46743 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Zone Name DropDown has been Selected as Diamond-Bangle Pair-Zone
+46970 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Segment Drop-down has been Selected asDiamond
+47113 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Clicked on Search Button to get Status Available and Segment Diamond
+50007 [main] INFO  TC_RaiseSalesBill_FGStock_001  - 1st record Stock Number from FG Stock report for Status Available and Segment Diamond is 690 and Stock Weight is 41.850
+50008 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Staring Raise Sale Bill for Diamond Segment FG Stock
+50008 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Raise Sale Bill Method has been Started
+50009 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Object has been created for CreateSaleBill page Object
+50148 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Clicked On Function menu
+50297 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Clicked On Bill Sub Menu
+50459 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Clicked On Sale Bill Sub Menu
+50775 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Sale Create or Search DropDown has been Selected
+50954 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Under Dropdown, Create Sale Bill Has been Selected
+51156 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Showing selectDocType Dropdown
+51790 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Doc Type DropDown has been Selected as FG Stock
+51956 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Sending Customer ID to Search Customer Box
+52100 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Clicked on Search Customer
+52805 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Selected Customer from Search page of Customer
+52948 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Clicked on Ok button from popup
+55725 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Entering FG Stock Number for Segment Diamond is 690
+55928 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Entering FG Stock Number for Segment Diamond is 41.850
+56036 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Clicked on geting data arrow Button
+0    [main] INFO  TC_RaiseSalesBill_FGStock_001  - Sales SE login Successfully and GetFGStockDetails test Case is starting for Segment Gold
+6    [main] INFO  TC_RaiseSalesBill_FGStock_001  - Sales SE login Successfully and GetFGStockDetails for Segment Gold test Case is starting
+22   [main] INFO  TC_RaiseSalesBill_FGStock_001  - Object Created for FGStock PageObject Classes for Segment Gold
+253  [main] INFO  TC_RaiseSalesBill_FGStock_001  - clicked on Report Menu Drop-Down
+418  [main] INFO  TC_RaiseSalesBill_FGStock_001  - clicked on Stock Sub-Menu Drop-Down
+572  [main] INFO  TC_RaiseSalesBill_FGStock_001  - clicked on FG Stock Sub-Menu Drop-Down
+3823 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Search filter Status DropDown is Selected as Available
+4012 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Search filter Store/DC Type DropDown is Selected as Store
+4050 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Waited for Store/DC Name Drop Down
+4315 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Search filter Store/DC Name DropDown is Selected as TS Madision
+4487 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Clicked on Zone Dropdown
+4515 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Getting SE login ID Zone and login Zone ID is Diamond-Bangle Pair-Zone
+4546 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Waiting for Store Name is Clickable
+6655 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Zone Name DropDown has been Selected as Diamond-Bangle Pair-Zone
+6865 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Segment Drop-down has been Selected asGold
+7010 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Clicked on Search Button to get Status Available and Segment Gold
+9945 [main] INFO  TC_RaiseSalesBill_FGStock_001  - 1st record Stock Number from FG Stock report for Status Available and Segment Gold is 445 and Stock Weight is 100.000
+9945 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Staring Raise Sale Bill for Gold Segment FG Stock
+9946 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Raise Sale Bill Method has been Started
+9950 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Object has been created for CreateSaleBill page Object
+10109 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Clicked On Function menu
+10263 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Clicked On Bill Sub Menu
+10454 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Clicked On Sale Bill Sub Menu
+10790 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Sale Create or Search DropDown has been Selected
+11034 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Under Dropdown, Create Sale Bill Has been Selected
+11261 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Showing selectDocType Dropdown
+11883 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Doc Type DropDown has been Selected as FG Stock
+12066 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Sending Customer ID to Search Customer Box
+12217 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Clicked on Search Customer
+12754 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Sales SE login Successfully and GetFGStockDetails test Case is starting for Segment Silver
+12755 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Sales SE login Successfully and GetFGStockDetails for Segment Silver test Case is starting
+12758 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Object Created for FGStock PageObject Classes for Segment Silver
+13957 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Sales SE login Successfully and GetFGStockDetails test Case is starting for Segment Platinum
+13958 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Sales SE login Successfully and GetFGStockDetails for Segment Platinum test Case is starting
+13959 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Object Created for FGStock PageObject Classes for Segment Platinum
+15115 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Sales SE login Successfully and GetFGStockDetails test Case is starting for Segment Diamond
+15116 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Sales SE login Successfully and GetFGStockDetails for Segment Diamond test Case is starting
+15122 [main] INFO  TC_RaiseSalesBill_FGStock_001  - Object Created for FGStock PageObject Classes for Segment Diamond

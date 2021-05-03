@@ -2,8 +2,6 @@ package com.vajra.TestClass;
 
 import java.io.IOException;
 
-import javax.swing.text.html.CSS;
-
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 

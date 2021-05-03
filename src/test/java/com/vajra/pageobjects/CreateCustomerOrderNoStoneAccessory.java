@@ -3,19 +3,14 @@ package com.vajra.pageobjects;
 
 
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Iterator;
 import java.util.List;
 
-import org.openqa.selenium.Dimension;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
-import com.google.inject.Key;
 
 //locators for Creating Order with out stone and accessory
 public class CreateCustomerOrderNoStoneAccessory {

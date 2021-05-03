@@ -4,38 +4,22 @@ import java.io.File;
 import java.io.IOException;
 
 import java.util.List;
-import java.util.concurrent.TimeUnit;
-
 import org.apache.commons.io.FileUtils;
 import org.apache.log4j.BasicConfigurator;
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
-import org.openqa.selenium.Alert;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.firefox.FirefoxDriverLogLevel;
 import org.openqa.selenium.firefox.FirefoxOptions;
-import org.openqa.selenium.firefox.FirefoxProfile;
-import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Parameters;
-
 import com.vajra.utilities.Readconfig;
-import com.vajra.utilities.XLUtilities;
-
-import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BaseClasss {
 	
@@ -81,7 +65,7 @@ public static String AlertText;
 		else if(Browser.equals("Firefox")) { 
 			System.setProperty("webdriver.gecko.driver",readconfig.readFirefoxpath());
 			FirefoxOptions options = new FirefoxOptions();
-
+options.getProfile();
 		}
 	}
 	public void envSetUp() {
@@ -135,7 +119,7 @@ public static String AlertText;
 			if(element.isDisplayed())
 				return true;
 		}catch (Exception e) {
-			// TODO: handle exception
+		
 			return false;
 		}
 		return false;
@@ -148,8 +132,7 @@ public static String AlertText;
 	}
 	
 	public static void handleAlert(String perform) {
-		Alert alert = driver.switchTo().alert();
-	if(perform.equals("Cancel")) {
+		if(perform.equals("Cancel")) {
 		driver.switchTo().alert().dismiss();			
 	}
 	else if(perform.equals("Accept")) {

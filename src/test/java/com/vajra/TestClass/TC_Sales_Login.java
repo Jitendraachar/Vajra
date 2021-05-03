@@ -1,13 +1,8 @@
 package com.vajra.TestClass;
 import java.io.IOException;
-import java.util.concurrent.TimeUnit;
-
 import org.testng.annotations.*;
-import com.vajra.TestClass.*;
 import com.vajra.pageobjects.LoginPageObject;
 import com.vajra.utilities.XLUtilities;
-import com.vajra.TestClass.*;
-
 import junit.framework.Assert;
 
 public class TC_Sales_Login extends BaseClasss {
